@@ -1,0 +1,129 @@
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  position: fixed;
+  z-index:1000;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index:1000;
+}
+
+body{
+background-color: #ffffff;
+}
+.card-container {
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+    text-align: center;
+}
+.card-container .pro {
+    color: #231E39;
+    background-color: #FEBB0B;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.card-container .round {
+border: 1px solid #03BFCB;
+border-radius: 50%;
+padding: 7px;
+}
+.bbg1{
+  font-family: cursive;
+}
+@media (max-width: 426px) {
+    .selectcss{
+        font-size: 13px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .inp{
+    margin-left: 60px;
+    width: 400px;
+    }
+    .contain {
+    width: 1200px;
+    margin: 0 auto;
+    }
+    .sel{
+        margin-left: 0px;
+    }
+    .selectcss{
+        width: 180px;
+    }
+    .selectcss1{
+        margin-left: 40px;
+    }
+    .selectcss2{
+        margin-right: 30px;
+    }
+    .uul{
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width: 1139px) {
+    .contain .social {
+    width: 1000px;
+    display: block;
+    }
+    .social h1 {
+    margin: 0px;
+    }
+}
+
+  
+  

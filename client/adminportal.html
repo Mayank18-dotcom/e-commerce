@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/css/adminportal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-secondary border-right" id="sidebar-wrapper">
+            <br><br>
+          <div class="sidebar-heading text-dark font-weight-bold bg-secondary">Admin Portal</div>
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action text-dark font-weight-bold bg-secondary bbg1">SIDE 1</a>
+            <a href="#" class="list-group-item list-group-item-action text-dark font-weight-bold bg-secondary bbg1">SIDE 2</a>
+            <a href="#" class="list-group-item list-group-item-action text-dark font-weight-bold bg-secondary bbg1">SIDE 3</a>
+            <a href="#" class="list-group-item list-group-item-action text-dark font-weight-bold bg-secondary bbg1">SIDE 4</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-secondary text-dark font-weight-bold bg-secondary header">
+                <button class="btn btn-primary" id="menu-toggle">SELECT FORM</button>
+                <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fa fa-arrow-down text-light" aria-hidden="true" style="padding-top: 5px;"></i></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto uul">
+                    <li class="nav-item active">
+                      <a class="nav-link text-dark font-weight-bold bbg1" href="#targetdiv1">Product Details <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark font-weight-bold bbg1" href="#targetdiv2">Colors and Image upload <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark font-weight-bold bbg1" href="#targetdiv3">Coupon Details <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark font-weight-bold bbg1" href="#targetdiv4">More Details <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark bbg1" href="#targetdiv5">Submit Form <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+      <br><br><br>
+      <form>
+        <section id="targetdiv1">
+            <br><br><br>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-8 col-xl-6 card-container">
+                    <div class="row">
+                        <div class="col text-center">
+                        <h1>Product Details</h1>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col mt-4">
+                        <input type="number" class="form-control inp" placeholder="PRODUCT ID">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <select class="row custom-select selectcss selectcss1">
+                                <option selected>Product Type</option>
+                                <option value="1">Product Type 1</option>
+                                <option value="2">Product Type 2</option>
+                                <option value="3">Product Type 3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="row custom-select selectcss selectcss2">
+                                <option selected>Product Category</option>
+                                <option value="1">Product Category 1</option>
+                                <option value="2">Product Category 2</option>
+                                <option value="3">Product Category 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <select class="row custom-select selectcss selectcss1">
+                                <option selected>Product Attribute 1</option>
+                                <option value="1">Product Attribute 1.1</option>
+                                <option value="2">Product Attribute 1.2</option>
+                                <option value="3">Product Attribute 1.3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="row custom-select selectcss selectcss2">
+                                <option selected>Product Attribute 2</option>
+                                <option value="1">Product Attribute 2.1</option>
+                                <option value="2">Product Attribute 2.2</option>
+                                <option value="3">Product Attribute 2.3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <select class="row custom-select selectcss selectcss1">
+                                <option selected>Product Attribute 3</option>
+                                <option value="1">Product Attribute 3.1</option>
+                                <option value="2">Product Attribute 3.2</option>
+                                <option value="3">Product Attribute 3.3</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="row custom-select selectcss selectcss2">
+                                <option selected>Product Attribute 4</option>
+                                <option value="1">Product Attribute 4.1</option>
+                                <option value="2">Product Attribute 4.2</option>
+                                <option value="3">Product Attribute 4.3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                        <input type="text" class="form-control inp" placeholder="Title">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                        <input type="text" class="form-control inp" placeholder="Sub Title">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                        <input type="text" class="form-control inp" placeholder="Price">
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                        <input type="text" class="form-control inp" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <br><br><br><br>
+            <section id="targetdiv2">
+            <br><br><br><br><br><br>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8 col-xl-6 card-container " style="background-color: lightcoral;">
+                  <div class="row">
+                    <div class="col text-center">
+                      <h1>Colors and Image upload</h1>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="row">
+                    <div class="col">
+                      <h5>COLORS</h5>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      RED
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      YELLOW
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      GREEN
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      BLUE
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      WHITE
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      BLACK
+                    </label>
+                  </div>
+                  <br><br><br>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                  </div>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+            </section>
+            <br><br><br><br>
+            <section id="targetdiv3">
+            <br><br><br><br><br><br>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8 col-xl-6 card-container bg-dark">
+                  <div class="row">
+                    <div class="col text-center">
+                      <h1>Coupon Details</h1>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col mt-4">
+                      <input type="text" class="form-control inp" placeholder="Coupon Code 1">
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col mt-4">
+                      <input type="text" class="form-control inp" placeholder="Coupon Code 2">
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col mt-4">
+                      <input type="text" class="form-control inp" placeholder="Coupon Code 3">
+                    </div>
+                  </div>
+                  <br>
+                </div>
+              </div>
+            </div>
+            </section>
+            <br><br><br><br><br><br><br>
+            <section id="targetdiv4">
+            <br><br><br>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8 col-xl-6 card-container bg-dark">
+                  <div class="row">
+                    <div class="col text-center">
+                      <h1>More Details</h1>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col mt-4">
+                      <textarea type="text" class="form-control inp" placeholder="Design Details"></textarea>
+                    </div>
+                  </div>
+                  <br>
+                <select class="row custom-select inp sel">
+                    <option selected>Fabric</option>
+                    <option value="1">Fabric type 1</option>
+                    <option value="2">Fabric type 2</option>
+                    <option value="3">Fabric type 3</option>
+                </select>
+                <div class="row align-items-center">
+                <div class="col mt-4">
+                    <input type="text" class="form-control inp" placeholder="Coupon Code 3">
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                <div class="col">
+                    <h5>Size and Fit </h5>
+                </div>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    2
+                </label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    4
+                </label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    6
+                </label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    8
+                </label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    10
+                </label>
+                </div>
+                <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    12
+                </label>
+                </div>
+                <br>
+                <div class="row align-items-center">
+                <div class="col mt-4">
+                    <textarea type="text" class="form-control inp" placeholder="Material and Care"></textarea>
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <select class="row custom-select selectcss selectcss1">
+                            <option selected>Type</option>
+                            <option value="1">Type 1</option>
+                            <option value="2">Type 2</option>
+                            <option value="3">Type 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="row custom-select selectcss selectcss2">
+                            <option selected>Print or Pattern Type </option>
+                            <option value="1">Print or Pattern Type  1</option>
+                            <option value="2">Print or Pattern Type  2</option>
+                            <option value="3">Print or Pattern Type  3</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <select class="row custom-select selectcss selectcss1">
+                            <option selected>Blouse Fabric</option>
+                            <option value="1">Blouse Fabric 1</option>
+                            <option value="2">Blouse Fabric 2</option>
+                            <option value="3">Blouse Fabric 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="row custom-select selectcss selectcss2">
+                            <option selected>Blouse</option>
+                            <option value="1">Blouse 1</option>
+                            <option value="2">Blouse 2</option>
+                            <option value="3">Blouse 3</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <select class="row custom-select selectcss selectcss1">
+                            <option selected>Saree Fabric</option>
+                            <option value="1">Saree Fabric 1</option>
+                            <option value="2">Saree Fabric 2</option>
+                            <option value="3">Saree Fabric 3</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select class="row custom-select selectcss selectcss2">
+                            <option selected>Wash care</option>
+                            <option value="1">Wash care 1</option>
+                            <option value="2">Wash care 2</option>
+                            <option value="3">Wash care 3</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br><br><br>
+          <div class="row justify-content-start mt-4" id="targetdiv5">
+            <div class="col text-center">
+            <button class="btn btn-primary mt-4" style="width: 150px;">Submit Form</button>
+            </div>
+          </div>
+          <br><br><br><br>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./src/js/adminportal.js"></script>
+</body>
+</html>
