@@ -87,6 +87,13 @@ padding: 7px;
     .selectcss{
         font-size: 13px;
     }
+    .card-container{
+      width: 375px;
+    }
+    .sec{
+      margin-left: 20px;
+      width: 90%;
+    }
 }
 
 
