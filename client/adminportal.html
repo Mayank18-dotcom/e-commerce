@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./src/css/adminportal.css">
     <title>Document</title>
 </head>
@@ -55,8 +56,9 @@
       <br><br><br>
       <div style="text-align: center;">
         <br><br><br>
+
         <select id="selectMe" class="custom-select selectcss">
-          <option selected>Category</option>
+          <option selected >Category</option>
           <option value="targetdiv1">GHAGRA</option>
           <option value="targetdiv2">CHUDIDAAR - PATIYALA</option>
           <option value="targetdiv3">NIGHTWEAR</option>
@@ -178,14 +180,41 @@
                       </label>
                     </div>
                     <br><br><br>
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label inp" for="customFile">Upload 6 images</label>
-                    </div>
+                    <div class="aman">
+                      <div class="wrapper">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label for="file-input">
+                              <i class="fa fa-plus-square" aria-hidden="true"></i>
+                            </label>
+                            <input id="file-input" type="file" class="image-upload" accept="image/*" style="display:none;" />
+                          </div>
+                        </div>
+                      
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label>
+                              <input type="file" class="image-upload" accept="image/*" />
+                            </label>
+                          </div>
+                        </div>
+                      
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label>
+                              <input type="file" class="image-upload" accept="image/*" />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
                     <br><br>
                     <div class="row align-items-center mt-4">
                       <div class="col">
-                      <textarea type="text" class="form-control inp" placeholder="Description"></textarea>
+                      <textarea type="text" class="form-control inp mt-4" placeholder="Description"></textarea>
                       </div>
                     </div>
                     <br><br>
