@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/css/adminportal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-dark text-light border-right" id="sidebar-wrapper">
+            <br><br>
+          <div class="sidebar-heading text-light bg-dark">Admin Portal</div>
+          <div class="list-group list-group-flush">
+            <a href="adminportal.html" class="list-group-item list-group-item-action text-light bg-dark">Product Upload</a>
+            <a href="productlist.html" class="list-group-item list-group-item-action text-light bg-dark">Product List</a>
+            <a href="iam.html" class="list-group-item list-group-item-action text-light bg-dark">IAM</a>
+            <a href="#" class="list-group-item list-group-item-action text-light bg-dark">Logout</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-secondary text-light bg-dark header">
+                <button class="btn btn-primary" id="menu-toggle"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+                <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fa fa-arrow-down text-light" aria-hidden="true" style="padding-top: 5px;"></i></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-4 uul">
+                    <li class="nav-item active">
+                      <a class="nav-link text-light bbg1 mr-4" href="#targetdiv1">Product Details <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light bbg1 mr-4" href="#targetdiv2">Colors and Image upload <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light bbg1 mr-4" href="#targetdiv3">Coupon Details <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light bbg1 mr-4" href="#targetdiv4">MorRedDetails <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+      <br><br><br>
+
+   
+    </body>
+    </html>
