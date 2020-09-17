@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('#'+$(this).val()).show();
   })
 });
+
 function initImageUpload(box) {
   let uploadField = box.querySelector('.image-upload');
 
