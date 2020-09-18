@@ -15,8 +15,13 @@
 
 .iicon{
   position: absolute;
-  padding-top: 10px;
-  margin-left: 230px;
+  padding-top: 12px;
+  margin-left: 220px;
+  border: none;
+  background-color: white;
+}
+.iiicon{
+  font-size: 22px;
 }
 .box {
   display: block;
