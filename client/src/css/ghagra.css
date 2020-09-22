@@ -1,0 +1,133 @@
+.iimg{
+  height: 400px;
+  width: 300px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+table {
+  margin-left: 25px;
+}
+td, th {
+  border: 0px solid #dddddd;
+  padding: 10px;
+}
+
+/* NEW */
+.iimgg{
+  position: relative;
+  border-radius: 10px;
+  width: 190px;
+  height: 250px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.imgnav{
+  width: 100px;
+  height: 50px;
+}
+/* NEW */
+.row2{
+  width: 100%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-lg{
+  border-radius: 20px;
+}
+.details{
+  text-align: left;
+  width: 450px;
+}
+.strike{
+  text-decoration: line-through;
+  color: red;
+  margin-right: 10px;
+}
+.mimg{
+  display: block;
+}
+.mrr{
+  margin-left: 100px;
+}
+.sizes{
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: #dddddd;
+}
+.boxed label {
+  margin-top: -10px;
+  text-align: center;
+  font-size: 12px;
+  width: 40px;
+  padding: 8px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+  border-radius:50%;
+  font-weight: bold;
+}
+
+.boxed input[type="radio"] {
+  text-align:center;
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label {
+  border: solid 2px rgb(201, 207, 201);
+  background-color: rgb(179, 187, 179);
+}
+
+@media screen and (max-width:769px) {
+  .tbl{
+    max-width: 100%;
+  text-align: center;
+  }
+  .iimg{
+    margin-left: -10px;
+    padding-bottom: 15px;
+    height: 400px;
+  }
+  /* NEW */
+  .iimgg{
+    padding-bottom: 15px;
+    margin-left: 30px;
+  }
+  .iimmgg{
+    width: 400px;
+    height: 500px;
+  }
+  table td {
+      display: table-row;
+  }
+  .col-md-3{
+    margin-left: 40px;
+  }
+  .col-md-6{
+    margin-left: 40px;
+  }
+  .btn1{
+    margin-bottom: 20px;
+  }
+  .mimg{
+    font-weight: bold;
+    display: none;
+    text-align: center;
+  }
+  .details{
+    width: auto;
+  }
+  .mrr{
+    margin-left: 35px;
+  }
+  .boxed label {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 10px;
+    width: 30px;
+    padding: 5px;
+    padding-top: 7px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+  }
+}
