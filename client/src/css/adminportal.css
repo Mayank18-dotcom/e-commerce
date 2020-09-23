@@ -12,7 +12,10 @@ transition: margin .25s ease-out;
 position: fixed;
 z-index:1000;
 }
-
+.dropdown{
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
 .iicon{
 position: absolute;
 padding-top: 12px;
