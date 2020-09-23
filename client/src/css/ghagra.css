@@ -86,7 +86,8 @@ td, th {
   .iimg{
     margin-left: -10px;
     padding-bottom: 15px;
-    height: 400px;
+    height: 500px;
+    width: 100%;
   }
   /* NEW */
   .iimgg{
@@ -129,5 +130,16 @@ td, th {
     padding-top: 7px;
     border: solid 2px #ccc;
     transition: all 0.3s;
+  }
+}
+@media screen and (max-width:376px){
+  .iimg{
+    height: 450px;
+  }
+}
+
+@media screen and (max-width:321px){
+  .iimg{
+    height: 380px;
   }
 }
