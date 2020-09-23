@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../../src/css/adminportal.css" />
+
+    <title>Admin Portal</title>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-dark text-light border-right" id="sidebar-wrapper">
+        <br /><br />
+        <div class="sidebar-heading text-light bg-dark">Admin Portal</div>
+        <div class="list-group list-group-flush">
+          <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Product Upload
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="../dressMaterials/add.html">DRESS MATERIALS</a>
+              <a class="dropdown-item" href="../ghagra/add.html">GHAGRA</a>
+              <a class="dropdown-item" href="../kurtis/add.html">KURTIS</a>
+              <a class="dropdown-item" href="../leggings/add.html">LEGGINGS</a>
+              <a class="dropdown-item" href="../nightwear/add.html">NIGHTWEAR</a>
+              <a class="dropdown-item" href="../pants/add.html">PANTS</a>
+              <a class="dropdown-item" href="../plazzos/add.html">PLAZZOS</a>
+              <a class="dropdown-item" href="../readymadeBlouse/add.html">READY MADE BLOUSE</a>
+              <a class="dropdown-item" href="../readymadeDresses/add.html">READY MADE DRESSES</a>
+              <a class="dropdown-item" href="../sarees/add.html">SAREES</a>
+            </div>
+          </div>
+          <a
+            href="./list.html"
+            class="list-group-item list-group-item-action text-light bg-dark"
+            >Product List</a
+          >
+          <a
+            href="iam.html"
+            class="list-group-item list-group-item-action text-light bg-dark"
+            >IAM</a
+          >
+          <a
+            href="#"
+            id="logout-btn"
+            class="list-group-item list-group-item-action text-light bg-dark"
+            >Logout</a
+          >
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-secondary text-light bg-dark header"
+        >
+          <button class="btn btn-primary" id="menu-toggle">
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+          </button>
+        </nav>
+        <br /><br /><br />
+        <form id="Category4">
+          <section id="DRESS_MATERIAL" class="sec">
+            <br /><br /><br />
+            <div class="container">
+              <div class="row justify-content-center">
+                <div
+                  class="col-12 col-md-8 col-lg-8 col-xl-8 card-container bg-dark"
+                >
+                  <div class="row">
+                    <div class="col text-center">
+                      <h1>DRESS MATERIAL</h1>
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <button class="iicon">
+                        <i
+                          class="fa fa-search"
+                          style="font-size: 22px; color: rgb(163, 163, 163)"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Product ID"
+                        id="product_id"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Title"
+                        id="title"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Sub Title"
+                        id="sub_title"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Price"
+                        id="price"
+                      />
+                    </div>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="col">
+                      <h5>SIZE</h5>
+                    </div>
+                  </div>
+                  <div id="size-container">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="XS"
+                        id="size1"
+                      />
+                      <label class="form-check-label" for="size1"> XS </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="S"
+                        id="size2"
+                      />
+                      <label class="form-check-label" for="size2"> S </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="M"
+                        id="size3"
+                      />
+                      <label class="form-check-label" for="size3"> M </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="L"
+                        id="size4"
+                      />
+                      <label class="form-check-label" for="size4"> L </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="XL"
+                        id="size5"
+                      />
+                      <label class="form-check-label" for="size5"> XL </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="XLL"
+                        id="size6"
+                      />
+                      <label class="form-check-label" for="size6"> XLL </label>
+                    </div>
+                  </div>
+                  <br /><br /><br />
+                  <div class="row">
+                    <div class="col">
+                      <h5>COLOR</h5>
+                    </div>
+                  </div>
+                  <div class="colors">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Maroon"
+                        id="col41"
+                      />
+                      <label class="form-check-label" for="col41">
+                        Maroon
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Red"
+                        id="col42"
+                      />
+                      <label class="form-check-label" for="col42"> Red </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Bottle green"
+                        id="col43"
+                      />
+                      <label class="form-check-label" for="col43">
+                        Bottle green
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Pista green"
+                        id="col44"
+                      />
+                      <label class="form-check-label" for="col44">
+                        Pista green
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Brown"
+                        id="col45"
+                      />
+                      <label class="form-check-label" for="col45">
+                        Brown
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="White"
+                        id="col46"
+                      />
+                      <label class="form-check-label" for="col46">
+                        White
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Off White"
+                        id="col47"
+                      />
+                      <label class="form-check-label" for="col47">
+                        Off white
+                      </label>
+                    </div>
+                    <br /><br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Black"
+                        id="col48"
+                      />
+                      <label class="form-check-label" for="col48">
+                        Black
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Rani"
+                        id="col49"
+                      />
+                      <label class="form-check-label" for="col49"> Rani </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Parrot green"
+                        id="col410"
+                      />
+                      <label class="form-check-label" for="col410">
+                        Parrot green
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Beige"
+                        id="col411"
+                      />
+                      <label class="form-check-label" for="col411">
+                        Beige
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Orange"
+                        id="col412"
+                      />
+                      <label class="form-check-label" for="col412">
+                        Orange
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Rama green"
+                        id="col413"
+                      />
+                      <label class="form-check-label" for="col413">
+                        Rama green
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Mustard"
+                        id="col414"
+                      />
+                      <label class="form-check-label" for="col414">
+                        Mustard
+                      </label>
+                    </div>
+                    <br /><br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Purple"
+                        id="col415"
+                      />
+                      <label class="form-check-label" for="col415">
+                        Purple
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Violet"
+                        id="col416"
+                      />
+                      <label class="form-check-label" for="col416">
+                        Violet
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Navy blue"
+                        id="col417"
+                      />
+                      <label class="form-check-label" for="col417">
+                        Navy blue
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Rust"
+                        id="col418"
+                      />
+                      <label class="form-check-label" for="col418">
+                        Rust
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Steel grey"
+                        id="col419"
+                      />
+                      <label class="form-check-label" for="col419">
+                        Steel grey
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Skin"
+                        id="col420"
+                      />
+                      <label class="form-check-label" for="col420">
+                        Skin
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Lavender"
+                        id="col421"
+                      />
+                      <label class="form-check-label" for="col421">
+                        Lavender
+                      </label>
+                    </div>
+                    <br /><br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Blue"
+                        id="col422"
+                      />
+                      <label class="form-check-label" for="col422">
+                        Blue
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Peacock"
+                        id="col423"
+                      />
+                      <label class="form-check-label" for="col423">
+                        Peacock green
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Mehandi"
+                        id="col424"
+                      />
+                      <label class="form-check-label" for="col424">
+                        Mehandi
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Onion"
+                        id="col425"
+                      />
+                      <label class="form-check-label" for="col425">
+                        Onion
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Yellow"
+                        id="col426"
+                      />
+                      <label class="form-check-label" for="col426">
+                        Yellow
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Dark grey"
+                        id="col427"
+                      />
+                      <label class="form-check-label" for="col427">
+                        Dark grey
+                      </label>
+                    </div>
+                    <br /><br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Peach"
+                        id="col428"
+                      />
+                      <label class="form-check-label" for="col428">
+                        Peach
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Tango"
+                        id="col429"
+                      />
+                      <label class="form-check-label" for="col429">
+                        Tango
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Gold"
+                        id="col430"
+                      />
+                      <label class="form-check-label" for="col430">
+                        Gold
+                      </label>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <div class="row">
+                    <div class="col">
+                      <h4>Upload Images</h4>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="wrapper sideit">
+                    <div class="row">
+                      <div class="col">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label
+                              ><input
+                                type="file"
+                                class="image-upload"
+                                accept="image/*"
+                                style="width: 0px" /><img
+                                src="../../src/img/icon1.png"
+                                style="width: 40px; height: 40px"
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label
+                              ><input
+                                type="file"
+                                class="image-upload"
+                                accept="image/*"
+                                style="width: 0px" /><img
+                                src="../../src/img/icon1.png"
+                                style="width: 40px; height: 40px"
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label
+                              ><input
+                                type="file"
+                                class="image-upload"
+                                accept="image/*"
+                                style="width: 0px" /><img
+                                src="../../src/img/icon1.png"
+                                style="width: 40px; height: 40px"
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label
+                              ><input
+                                type="file"
+                                class="image-upload"
+                                accept="image/*"
+                                style="width: 0px" /><img
+                                src="../../src/img/icon1.png"
+                                style="width: 40px; height: 40px"
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label
+                              ><input
+                                type="file"
+                                class="image-upload"
+                                accept="image/*"
+                                style="width: 0px" /><img
+                                src="../../src/img/icon1.png"
+                                style="width: 40px; height: 40px"
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="box">
+                          <div class="js--image-preview"></div>
+                          <div class="upload-options">
+                            <label
+                              ><input
+                                type="file"
+                                class="image-upload"
+                                accept="image/*"
+                                style="width: 0px" /><img
+                                src="../../src/img/icon1.png"
+                                style="width: 40px; height: 40px"
+                            /></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Kurta Fabric"
+                        id="kurta_fabric"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Bottom Fabric"
+                        id="bottom_fabric"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Dupatta Fabric"
+                        id="dupatta_fabric"
+                      />
+                    </div>
+                  </div>
+                  <br />
+                  <div class="col">
+                    <select class="row custom-select selectcss" id="kfl">
+                      <option selected>Kurta fabric Length</option>
+                      <option value="Kurta fabric Length 1">
+                        Kurta fabric Length Type 1
+                      </option>
+                      <option value="Kurta fabric Length 2">
+                        Kurta fabric Length Type 2
+                      </option>
+                      <option value="Kurta fabric Length 3">
+                        Kurta fabric Length Type 3
+                      </option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="col">
+                    <select class="row custom-select selectcss" id="bfl">
+                      <option selected>Bottom fabric Length</option>
+                      <option value="Bottom fabric Length 1">
+                        Bottom fabric Length Type 1
+                      </option>
+                      <option value="Bottom fabric Length 2">
+                        Bottom fabric Length Type 2
+                      </option>
+                      <option value="Bottom fabric Length 3">
+                        Bottom fabric Length Type 3
+                      </option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="col">
+                    <select class="row custom-select selectcss" id="dl">
+                      <option selected>Dupatta Length</option>
+                      <option value="Dupatta Length 1">
+                        Dupatta Length Type 1
+                      </option>
+                      <option value="Dupatta Length 2">
+                        Dupatta Length Type 2
+                      </option>
+                      <option value="Dupatta Length 3">
+                        Dupatta Length Type 3
+                      </option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="col">
+                    <select class="row custom-select selectcss" id="type">
+                      <option selected>Type</option>
+                      <option value="Type 1">Product Type 1</option>
+                      <option value="Type 2">Product Type 2</option>
+                      <option value="Type 3">Product Type 3</option>
+                    </select>
+                  </div>
+                  <br /><br />
+                  <div class="row">
+                    <div class="col">
+                      <h5>OCCASION</h5>
+                    </div>
+                  </div>
+                  <div id="occasion-cont">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Traditional"
+                        id="occasion1"
+                      />
+                      <label class="form-check-label" for="occasion1">
+                        Traditional
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Wedding"
+                        id="occasion2"
+                      />
+                      <label class="form-check-label" for="occasion2">
+                        Wedding
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Regular"
+                        id="occasion3"
+                      />
+                      <label class="form-check-label" for="occasion3">
+                        Regular
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Casual"
+                        id="occasion4"
+                      />
+                      <label class="form-check-label" for="occasion4">
+                        Casual
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Party-wear"
+                        id="occasion5"
+                      />
+                      <label class="form-check-label" for="occasion5">
+                        Party-wear
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Daily"
+                        id="occasion6"
+                      />
+                      <label class="form-check-label" for="occasion6">
+                        Daily
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Festive"
+                        id="occasion7"
+                      />
+                      <label class="form-check-label" for="occasion7">
+                        Festive
+                      </label>
+                    </div>
+                  </div>
+                  <br /><br /><br />
+                  <div class="col">
+                    <select class="row custom-select selectcss" id="stitch">
+                      <option selected>Stitch</option>
+                      <option value="Stitch 1">Stitch Type 1</option>
+                      <option value="Stitch 2">Stitch Type 2</option>
+                      <option value="Stitch 3">Stitch Type 3</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="col">
+                      <h5>WASH CARE</h5>
+                    </div>
+                  </div>
+                  <div id="washcare-cont">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Dry clean"
+                        id="w41"
+                      />
+                      <label class="form-check-label" for="w41">
+                        Dry clean
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Machine Wash"
+                        id="w42"
+                      />
+                      <label class="form-check-label" for="w42">
+                        Machine Wash
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value="Hand Wash"
+                        id="w43"
+                      />
+                      <label class="form-check-label" for="w43">
+                        Hand Wash
+                      </label>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <!-- <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Coupon Code 1"
+                        id="cp41"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Coupon Code 2"
+                        id="cp42"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Coupon Code 3"
+                        id="cp43"
+                      />
+                    </div>
+                  </div>
+                  <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control inp"
+                        placeholder="Discount"
+                        id="dis4"
+                      />
+                    </div>
+                  </div>
+                  <br /> -->
+                  <div class="row align-items-center">
+                    <div class="col mt-4">
+                      <button
+                        type="button"
+                        class="btn btn-primary mt-4"
+                        style="width: 150px"
+                        id="add-product"
+                      >
+                        Submit Form
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <br /><br /><br />
+              </div>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript" src="./add-product.js"></script>
+</html>
