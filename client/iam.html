@@ -1,59 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/css/adminportal.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="d-flex" id="wrapper">
+<html>
 
-        <!-- Sidebar -->
-        <div class="bg-dark text-light border-right" id="sidebar-wrapper">
-            <br><br>
-          <div class="sidebar-heading text-light bg-dark">Admin Portal</div>
-          <div class="list-group list-group-flush">
-            <a href="adminportal.html" class="list-group-item list-group-item-action text-light bg-dark">Product Upload</a>
-            <a href="productlist.html" class="list-group-item list-group-item-action text-light bg-dark">Product List</a>
-            <a href="iam.html" class="list-group-item list-group-item-action text-light bg-dark">IAM</a>
-            <a href="#" class="list-group-item list-group-item-action text-light bg-dark">Logout</a>
-          </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
-    
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-secondary text-light bg-dark header">
-                <button class="btn btn-primary" id="menu-toggle"><i class="fa fa-align-left" aria-hidden="true"></i></button>
-                <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"><i class="fa fa-arrow-down text-light" aria-hidden="true" style="padding-top: 5px;"></i></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-4 uul">
-                    <li class="nav-item active">
-                      <a class="nav-link text-light bbg1 mr-4" href="#targetdiv1">Product Details <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light bbg1 mr-4" href="#targetdiv2">Colors and Image upload <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light bbg1 mr-4" href="#targetdiv3">Coupon Details <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light bbg1 mr-4" href="#targetdiv4">MorRedDetails <span class="sr-only">(current)</span></a>
-                    </li>
-                  </ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Admin Portal Form</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./src/css/style3.css" />
+    <link rel="stylesheet" href="./src/css/adminportal.css" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>ADMIN</h3>
+                <h3>PORTAL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="./adminportal/dressMaterials/add.html">DRESS MATERIALS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/ghagra/add.html">GHAGRA</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/kurtis/add.html">KURTIS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/leggings/add.html">LEGGINGS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/nightwear/add.html">NIGHTWEAR</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/pants/add.html">PANTS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/plazzos/add.html">PLAZZOS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/readymadeBlouse/add.html">READY MADE BLOUSE</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/readymadeDresses/add.html">READY MADE DRESSES</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/sarees/add.html">SAREES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="./adminportal/dressMaterials/list.html">DRESS MATERIALS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/ghagra/list.html">GHAGRA</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/kurtis/list.html">KURTIS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/leggings/list.html">LEGGINGS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/nightwear/list.html">NIGHTWEAR</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/pants/list.html">PANTS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/plazzos/list.html">PLAZZOS</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/readymadeBlouse/list.html">READY MADE BLOUSE</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/readymadeDresses/list.html">READY MADE DRESSES</a>
+                        </li>
+                        <li>
+                            <a href="./adminportal/sarees/list.html">SAREES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">IAM</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div  id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                        <span>Sidebar</span>
+                    </button>
                 </div>
             </nav>
-      <br><br><br>
+            <!-- FORM -->
+        </div>
+    </div>
 
-    <script type="text/javascript" src="./src/js/adminportal.js"></script>
-    </body>
-    </html>
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="./adminportal/dressMaterials/add-product.js"></script>
+    <script src="./src/js/adminportal.js"></script>
+</body>
+
+</html>

@@ -1,813 +1,886 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../src/css/adminportal.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Admin Portal</title>
+    <title>Admin Portal Form</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../../src/css/style3.css">
+    <link rel="stylesheet" href="../../src/css/adminportal.css" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <div class="d-flex" id="wrapper">
 
-        <!-- Sidebar -->
-        <div class="bg-dark text-light border-right" id="sidebar-wrapper">
-          <br><br>
-        <div class="sidebar-heading text-light bg-dark">Admin Portal</div>
-        <div class="list-group list-group-flush">
-          <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Product Upload
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="../dressMaterials/add.html">DRESS MATERIALS</a>
-              <a class="dropdown-item" href="../ghagra/add.html">GHAGRA</a>
-              <a class="dropdown-item" href="../kurtis/add.html">KURTIS</a>
-              <a class="dropdown-item" href="../leggings/add.html">LEGGINGS</a>
-              <a class="dropdown-item" href="../nightwear/add.html">NIGHTWEAR</a>
-              <a class="dropdown-item" href="../pants/add.html">PANTS</a>
-              <a class="dropdown-item" href="../plazzos/add.html">PLAZZOS</a>
-              <a class="dropdown-item" href="../readymadeBlouse/add.html">READY MADE BLOUSE</a>
-              <a class="dropdown-item" href="../readymadeDresses/add.html">READY MADE DRESSES</a>
-              <a class="dropdown-item" href="../sarees/add.html">SAREES</a>
+<body style="background-image: url('../../src/img/landing_pic.jpg');">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Product List
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="../dressMaterials/list.html">DRESS MATERIALS</a>
-              <a class="dropdown-item" href="../ghagra/list.html">GHAGRA</a>
-              <a class="dropdown-item" href="../kurtis/list.html">KURTIS</a>
-              <a class="dropdown-item" href="../leggings/list.html">LEGGINGS</a>
-              <a class="dropdown-item" href="../nightwear/list.html">NIGHTWEAR</a>
-              <a class="dropdown-item" href="../pants/list.html">PANTS</a>
-              <a class="dropdown-item" href="../plazzos/list.html">PLAZZOS</a>
-              <a class="dropdown-item" href="../readymadeBlouse/list.html">READY MADE BLOUSE</a>
-              <a class="dropdown-item" href="../readymadeDresses/list.html">READY MADE DRESSES</a>
-              <a class="dropdown-item" href="../sarees/list.html">SAREES</a>
+
+            <div class="sidebar-header">
+                <h3>ADMIN</h3>
+                <h3>PORTAL</h3>
             </div>
-          </div>
-          <a href="iam.html" class="list-group-item list-group-item-action text-light bg-dark">IAM</a>
-          <a href="#"  id="logout-btn" class="list-group-item list-group-item-action text-light bg-dark">Logout</a>
-        </div>
-      </div>
-        <!-- /#sidebar-wrapper -->
-    
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-secondary text-light bg-dark header">
-                <button class="btn btn-primary" id="menu-toggle"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="../dressMaterials/add.html">DRESS MATERIALS</a>
+                        </li>
+                        <li>
+                            <a href="../ghagra/add.html">GHAGRA</a>
+                        </li>
+                        <li>
+                            <a href="../kurtis/add.html">KURTIS</a>
+                        </li>
+                        <li>
+                            <a href="../leggings/add.html">LEGGINGS</a>
+                        </li>
+                        <li>
+                            <a href="../nightwear/add.html">NIGHTWEAR</a>
+                        </li>
+                        <li>
+                            <a href="../pants/add.html">PANTS</a>
+                        </li>
+                        <li>
+                            <a href="../plazzos/add.html">PLAZZOS</a>
+                        </li>
+                        <li>
+                            <a href="../readymadeBlouse/add.html">READY MADE BLOUSE</a>
+                        </li>
+                        <li>
+                            <a href="../readymadeDresses/add.html">READY MADE DRESSES</a>
+                        </li>
+                        <li>
+                            <a href="../sarees/add.html">SAREES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="../dressMaterials/list.html">DRESS MATERIALS</a>
+                        </li>
+                        <li>
+                            <a href="../ghagra/list.html">GHAGRA</a>
+                        </li>
+                        <li>
+                            <a href="../kurtis/list.html">KURTIS</a>
+                        </li>
+                        <li>
+                            <a href="../leggings/list.html">LEGGINGS</a>
+                        </li>
+                        <li>
+                            <a href="../nightwear/list.html">NIGHTWEAR</a>
+                        </li>
+                        <li>
+                            <a href="../pants/list.html">PANTS</a>
+                        </li>
+                        <li>
+                            <a href="../plazzos/list.html">PLAZZOS</a>
+                        </li>
+                        <li>
+                            <a href="../readymadeBlouse/list.html">READY MADE BLOUSE</a>
+                        </li>
+                        <li>
+                            <a href="../readymadeDresses/list.html">READY MADE DRESSES</a>
+                        </li>
+                        <li>
+                            <a href="../sarees/list.html">SAREES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">IAM</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div  id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                        <span>Sidebar</span>
+                    </button>
+                </div>
             </nav>
-      <br><br><br>
-      <form id="Category8">
-        <section id="KURTIS" class="sec">
-          <br><br><br>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-12 col-md-8 col-lg-8 col-xl-8 card-container bg-dark">
-                    <div class="row">
-                      <div class="col text-center">
-                      <h1>KURTIS</h1>
-                      </div>
-                    </div>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                          <button class="iicon"><i class="fa fa-search" style="font-size: 22px;color: rgb(163, 163, 163);" aria-hidden="true"></i></button>
-                          <input type="text" class="form-control inp" placeholder="Product ID" id="id8">
-                      </div>
-                    </div>
-                    <div class="row align-items-center mt-4">
-                        <div class="col">
-                        <input type="text" class="form-control inp" placeholder="Title" id="title8">
-                        </div>
-                    </div>
-                    <div class="row align-items-center mt-4">
-                        <div class="col">
-                        <input type="text" class="form-control inp" placeholder="Sub Title" id="sub_title8">
-                        </div>
-                    </div>
-                    <div class="row align-items-center mt-4">
-                        <div class="col">
-                        <input type="text" class="form-control inp" placeholder="Price" id="price8">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select form-control selectcss" id="sub-cat8">
-                          <option selected>Sub - Categories</option>
-                          <option value="Kurtis">Kurtis</option>
-                          <option value="Kurtis with pants">Kurtis with pants</option>
-                          <option value="Kurtis with palazzos">Kurtis with palazzos</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col">
-                        <h5>SIZE</h5>
-                      </div>
-                    </div>
-                   <div id="size-container8">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="XS" id="defaultCheck81">
-                      <label class="form-check-label" for="defaultCheck81">
-                        XS
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="S" id="defaultCheck82">
-                      <label class="form-check-label" for="defaultCheck82">
-                        S
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="M" id="defaultCheck83">
-                      <label class="form-check-label" for="defaultCheck83">
-                        M
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="L" id="defaultCheck84">
-                      <label class="form-check-label" for="defaultCheck84">
-                        L
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="XL" id="defaultCheck85">
-                      <label class="form-check-label" for="defaultCheck85">
-                        XL
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="XLL" id="defaultCheck86">
-                      <label class="form-check-label" for="defaultCheck86">
-                        XLL
-                      </label>
-                    </div>
-                   </div>
-                    <br><br><br>
-                    <div class="row">
-                      <div class="col">
-                        <h5>COLOR</h5>
-                      </div>
-                    </div>
-                    <div class="colors">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Maroon" id="col81">
-                        <label class="form-check-label" for="col81">
-                          Maroon
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Red" id="col82">
-                        <label class="form-check-label" for="col82">
-                          Red
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Bottle green" id="col83">
-                        <label class="form-check-label" for="col83">
-                          Bottle green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Pista green" id="col84">
-                        <label class="form-check-label" for="col84">
-                          Pista green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Brown" id="col85">
-                        <label class="form-check-label" for="col85">
-                          Brown
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="White" id="col86">
-                        <label class="form-check-label" for="col86">
-                          White
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Off White" id="col87">
-                        <label class="form-check-label" for="col87">
-                          Off white
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Black" id="col88">
-                        <label class="form-check-label" for="col88">
-                          Black
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Rani" id="col89">
-                        <label class="form-check-label" for="col89">
-                          Rani
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Parrot green" id="col810">
-                        <label class="form-check-label" for="col810">
-                          Parrot green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Beige" id="col811">
-                        <label class="form-check-label" for="col811">
-                          Beige
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Orange" id="col812">
-                        <label class="form-check-label" for="col812">
-                          Orange
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Rama green" id="col813">
-                        <label class="form-check-label" for="col813">
-                          Rama green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Mustard" id="col814">
-                        <label class="form-check-label" for="col814">
-                          Mustard
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Purple" id="col815">
-                        <label class="form-check-label" for="col815">
-                          Purple
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Violet" id="col816">
-                        <label class="form-check-label" for="col816">
-                          Violet
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Navy blue" id="col817">
-                        <label class="form-check-label" for="col817">
-                          Navy blue
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Rust" id="col818">
-                        <label class="form-check-label" for="col818">
-                          Rust
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Steel grey" id="col819">
-                        <label class="form-check-label" for="col819">
-                          Steel grey
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Skin" id="col820">
-                        <label class="form-check-label" for="col820">
-                          Skin
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Lavender" id="col821">
-                        <label class="form-check-label" for="col821">
-                          Lavender
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Blue" id="col822">
-                        <label class="form-check-label" for="col822">
-                          Blue
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Peacock" id="col823">
-                        <label class="form-check-label" for="col823">
-                          Peacock green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Mehandi" id="col824">
-                        <label class="form-check-label" for="col824">
-                          Mehandi
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Onion" id="col825">
-                        <label class="form-check-label" for="col825">
-                          Onion
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Yellow" id="col826">
-                        <label class="form-check-label" for="col826">
-                          Yellow
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Dark grey" id="col827">
-                        <label class="form-check-label" for="col827">
-                          Dark grey
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Peach" id="col828">
-                        <label class="form-check-label" for="col828">
-                          Peach
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Tango" id="col829">
-                        <label class="form-check-label" for="col829">
-                          Tango
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Gold" id="col830">
-                        <label class="form-check-label" for="col830">
-                          Gold
-                        </label>
-                      </div>
-                    </div>
-                    <br><br>
-                      <div class="row">
-                        <div class="col">
-                          <h4>Upload Images</h4>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="wrapper sideit">
-                        <div class="row">
-                          <div class="col">
-                            <div class="box">
-                              <div class="js--image-preview"></div>
-                              <div class="upload-options">
-                                <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="box">
-                              <div class="js--image-preview"></div>
-                              <div class="upload-options">
-                                <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="box">
-                              <div class="js--image-preview"></div>
-                              <div class="upload-options">
-                                <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="box">
-                              <div class="js--image-preview"></div>
-                              <div class="upload-options">
-                                <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="box">
-                              <div class="js--image-preview"></div>
-                              <div class="upload-options">
-                                <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="box">
-                              <div class="js--image-preview"></div>
-                              <div class="upload-options">
-                                <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    <br>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <textarea type="text" class="form-control inp" placeholder="Description" id="des"></textarea>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="kfl8">
-                          <option selected>Kurti fabric Length</option>
-                          <option value="1">Kurti fabric Length Type 1</option>
-                          <option value="2">Kurti fabric Length Type 2</option>
-                          <option value="3">Kurti fabric Length Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="bfl8">
-                          <option selected>Bottom fabric Length</option>
-                          <option value="1">Bottom fabric Length Type 1</option>
-                          <option value="2">Bottom fabric Length Type 2</option>
-                          <option value="3">Bottom fabric Length Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="dl8">
-                          <option selected>Dupatta Length</option>
-                          <option value="1">Dupatta Length Type 1</option>
-                          <option value="2">Dupatta Length Type 2</option>
-                          <option value="3">Dupatta Length Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="type8">
-                          <option selected>Type</option>
-                          <option value="1">Product Type 1</option>
-                          <option value="2">Product Type 2</option>
-                          <option value="3">Product Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col">
-                        <h5>OCCASION</h5>
-                      </div>
-                    </div>
-                   <div id="occasion-cont8">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Traditional" id="o81">
-                      <label class="form-check-label" for="o81">
-                        Traditional
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Wedding" id="o82">
-                      <label class="form-check-label" for="o82">
-                        Wedding
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Regular" id="o83">
-                      <label class="form-check-label" for="o83">
-                        Regular
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Casual" id="o84">
-                      <label class="form-check-label" for="o84">
-                        Casual
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Party-wear" id="o85">
-                      <label class="form-check-label" for="o85">
-                        Party-wear
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Daily" id="o86">
-                      <label class="form-check-label" for="o86">
-                        Daily
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Festive" id="o87">
-                      <label class="form-check-label" for="o87">
-                        Festive
-                      </label>
-                    </div>
-                   </div>
-                    <br>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Fabric" id="faab8">
-                      </div>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="kl8">
-                          <option selected>Kurti Length</option>
-                          <option value="Kurti Length 1">Kurti Length Type 1</option>
-                          <option value="Kurti Length 2">Kurti Length Type 2</option>
-                          <option value="Kurti Length 3">Kurti Length Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="sl8">
-                          <option selected>Sleeve Length</option>
-                          <option value="Sleeve Length 1">Sleeve Length Type 1</option>
-                          <option value="Sleeve Length 2">Sleeve Length Type 2</option>
-                          <option value="Sleeve Length 3">Sleeve Length Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="ss8">
-                          <option selected>Sleeve styling</option>
-                          <option value="Sleeve styling 1">Sleeve styling Type 1</option>
-                          <option value="Sleeve styling 2">Sleeve styling Type 2</option>
-                          <option value="Sleeve styling 3">Sleeve styling Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="neck8">
-                          <option selected>Neck</option>
-                          <option value="Neck 1">Neck Type 1</option>
-                          <option value="Neck 2">Neck Type 2</option>
-                          <option value="Neck 3">Neck Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <div class="col">
-                      <select class="row custom-select selectcss" id="orna8">
-                          <option selected>Ornamentation</option>
-                          <option value="Ornamentation 1">Ornamentation Type 1</option>
-                          <option value="Ornamentation 2">Ornamentation Type 2</option>
-                          <option value="Ornamentation 3">Ornamentation Type 3</option>
-                      </select>
-                    </div>
-                    <br>
-                    <!-- <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Material" id="mat8">
-                      </div>
-                    </div> -->
-                    <br><br>
-                    <div class="row">
-                      <div class="col">
-                        <h5>WASH CARE</h5>
-                      </div>
-                    </div>
-                   <div id="washcare-cont8">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Dry clean" id="w81">
-                      <label class="form-check-label" for="w81">
-                        Dry clean
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Machine Wash" id="w82">
-                      <label class="form-check-label" for="w82">
-                        Machine Wash
-                      </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="Hand Wash" id="w83">
-                      <label class="form-check-label" for="w83">
-                        Hand Wash
-                      </label>
-                    </div>
-                   </div>
-                    <br><br>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Fabric 2" id="fab82">
-                      </div>
-                    </div>
+            <form id="Category8">
+                <section id="KURTIS" class="sec">
                   <br><br><br>
-                    <div class="row">
-                      <div class="col">
-                        <h5>COLOR 2</h5>
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-12 col-md-8 col-lg-8 col-xl-8 card-container bg-dark">
+                            <div class="row">
+                              <div class="col text-center">
+                              <h1>KURTIS</h1>
+                              </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                                  <button class="iicon"><i class="fa fa-search" style="font-size: 22px;color: rgb(163, 163, 163);" aria-hidden="true"></i></button>
+                                  <input type="text" class="form-control inp" placeholder="Product ID" id="id8">
+                              </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                                <div class="col">
+                                <input type="text" class="form-control inp" placeholder="Title" id="title8">
+                                </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                                <div class="col">
+                                <input type="text" class="form-control inp" placeholder="Sub Title" id="sub_title8">
+                                </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                                <div class="col">
+                                <input type="text" class="form-control inp" placeholder="Price" id="price8">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select form-control selectcss" id="sub-cat8">
+                                  <option selected>Sub - Categories</option>
+                                  <option value="Kurtis">Kurtis</option>
+                                  <option value="Kurtis with pants">Kurtis with pants</option>
+                                  <option value="Kurtis with palazzos">Kurtis with palazzos</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col">
+                                <h5>SIZE</h5>
+                              </div>
+                            </div>
+                           <div id="size-container8">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="XS" id="defaultCheck81">
+                              <label class="form-check-label" for="defaultCheck81">
+                                XS
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="S" id="defaultCheck82">
+                              <label class="form-check-label" for="defaultCheck82">
+                                S
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="M" id="defaultCheck83">
+                              <label class="form-check-label" for="defaultCheck83">
+                                M
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="L" id="defaultCheck84">
+                              <label class="form-check-label" for="defaultCheck84">
+                                L
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="XL" id="defaultCheck85">
+                              <label class="form-check-label" for="defaultCheck85">
+                                XL
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="XLL" id="defaultCheck86">
+                              <label class="form-check-label" for="defaultCheck86">
+                                XLL
+                              </label>
+                            </div>
+                           </div>
+                            <br><br><br>
+                            <div class="row">
+                              <div class="col">
+                                <h5>COLOR</h5>
+                              </div>
+                            </div>
+                            <div class="colors">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Maroon" id="col81">
+                                <label class="form-check-label" for="col81">
+                                  Maroon
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Red" id="col82">
+                                <label class="form-check-label" for="col82">
+                                  Red
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Bottle green" id="col83">
+                                <label class="form-check-label" for="col83">
+                                  Bottle green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Pista green" id="col84">
+                                <label class="form-check-label" for="col84">
+                                  Pista green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Brown" id="col85">
+                                <label class="form-check-label" for="col85">
+                                  Brown
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="White" id="col86">
+                                <label class="form-check-label" for="col86">
+                                  White
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Off White" id="col87">
+                                <label class="form-check-label" for="col87">
+                                  Off white
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Black" id="col88">
+                                <label class="form-check-label" for="col88">
+                                  Black
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Rani" id="col89">
+                                <label class="form-check-label" for="col89">
+                                  Rani
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Parrot green" id="col810">
+                                <label class="form-check-label" for="col810">
+                                  Parrot green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Beige" id="col811">
+                                <label class="form-check-label" for="col811">
+                                  Beige
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Orange" id="col812">
+                                <label class="form-check-label" for="col812">
+                                  Orange
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Rama green" id="col813">
+                                <label class="form-check-label" for="col813">
+                                  Rama green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Mustard" id="col814">
+                                <label class="form-check-label" for="col814">
+                                  Mustard
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Purple" id="col815">
+                                <label class="form-check-label" for="col815">
+                                  Purple
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Violet" id="col816">
+                                <label class="form-check-label" for="col816">
+                                  Violet
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Navy blue" id="col817">
+                                <label class="form-check-label" for="col817">
+                                  Navy blue
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Rust" id="col818">
+                                <label class="form-check-label" for="col818">
+                                  Rust
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Steel grey" id="col819">
+                                <label class="form-check-label" for="col819">
+                                  Steel grey
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Skin" id="col820">
+                                <label class="form-check-label" for="col820">
+                                  Skin
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Lavender" id="col821">
+                                <label class="form-check-label" for="col821">
+                                  Lavender
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Blue" id="col822">
+                                <label class="form-check-label" for="col822">
+                                  Blue
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Peacock" id="col823">
+                                <label class="form-check-label" for="col823">
+                                  Peacock green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Mehandi" id="col824">
+                                <label class="form-check-label" for="col824">
+                                  Mehandi
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Onion" id="col825">
+                                <label class="form-check-label" for="col825">
+                                  Onion
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Yellow" id="col826">
+                                <label class="form-check-label" for="col826">
+                                  Yellow
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Dark grey" id="col827">
+                                <label class="form-check-label" for="col827">
+                                  Dark grey
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Peach" id="col828">
+                                <label class="form-check-label" for="col828">
+                                  Peach
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Tango" id="col829">
+                                <label class="form-check-label" for="col829">
+                                  Tango
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Gold" id="col830">
+                                <label class="form-check-label" for="col830">
+                                  Gold
+                                </label>
+                              </div>
+                            </div>
+                            <br><br>
+                              <div class="row">
+                                <div class="col">
+                                  <h4>Upload Images</h4>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="wrapper sideit">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="box">
+                                      <div class="js--image-preview"></div>
+                                      <div class="upload-options">
+                                        <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="box">
+                                      <div class="js--image-preview"></div>
+                                      <div class="upload-options">
+                                        <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="box">
+                                      <div class="js--image-preview"></div>
+                                      <div class="upload-options">
+                                        <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="box">
+                                      <div class="js--image-preview"></div>
+                                      <div class="upload-options">
+                                        <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="box">
+                                      <div class="js--image-preview"></div>
+                                      <div class="upload-options">
+                                        <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="box">
+                                      <div class="js--image-preview"></div>
+                                      <div class="upload-options">
+                                        <label><input type="file" class="image-upload" accept="image/*" style="width:0px;"/><img src="../../src/img/icon1.png" style="width: 40px;height: 40px;"></label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <br>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <textarea type="text" class="form-control inp" placeholder="Description" id="des"></textarea>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="kfl8">
+                                  <option selected>Kurti fabric Length</option>
+                                  <option value="1">Kurti fabric Length Type 1</option>
+                                  <option value="2">Kurti fabric Length Type 2</option>
+                                  <option value="3">Kurti fabric Length Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="bfl8">
+                                  <option selected>Bottom fabric Length</option>
+                                  <option value="1">Bottom fabric Length Type 1</option>
+                                  <option value="2">Bottom fabric Length Type 2</option>
+                                  <option value="3">Bottom fabric Length Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="dl8">
+                                  <option selected>Dupatta Length</option>
+                                  <option value="1">Dupatta Length Type 1</option>
+                                  <option value="2">Dupatta Length Type 2</option>
+                                  <option value="3">Dupatta Length Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="type8">
+                                  <option selected>Type</option>
+                                  <option value="1">Product Type 1</option>
+                                  <option value="2">Product Type 2</option>
+                                  <option value="3">Product Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col">
+                                <h5>OCCASION</h5>
+                              </div>
+                            </div>
+                           <div id="occasion-cont8">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Traditional" id="o81">
+                              <label class="form-check-label" for="o81">
+                                Traditional
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Wedding" id="o82">
+                              <label class="form-check-label" for="o82">
+                                Wedding
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Regular" id="o83">
+                              <label class="form-check-label" for="o83">
+                                Regular
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Casual" id="o84">
+                              <label class="form-check-label" for="o84">
+                                Casual
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Party-wear" id="o85">
+                              <label class="form-check-label" for="o85">
+                                Party-wear
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Daily" id="o86">
+                              <label class="form-check-label" for="o86">
+                                Daily
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Festive" id="o87">
+                              <label class="form-check-label" for="o87">
+                                Festive
+                              </label>
+                            </div>
+                           </div>
+                            <br>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Fabric" id="faab8">
+                              </div>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="kl8">
+                                  <option selected>Kurti Length</option>
+                                  <option value="Kurti Length 1">Kurti Length Type 1</option>
+                                  <option value="Kurti Length 2">Kurti Length Type 2</option>
+                                  <option value="Kurti Length 3">Kurti Length Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="sl8">
+                                  <option selected>Sleeve Length</option>
+                                  <option value="Sleeve Length 1">Sleeve Length Type 1</option>
+                                  <option value="Sleeve Length 2">Sleeve Length Type 2</option>
+                                  <option value="Sleeve Length 3">Sleeve Length Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="ss8">
+                                  <option selected>Sleeve styling</option>
+                                  <option value="Sleeve styling 1">Sleeve styling Type 1</option>
+                                  <option value="Sleeve styling 2">Sleeve styling Type 2</option>
+                                  <option value="Sleeve styling 3">Sleeve styling Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="neck8">
+                                  <option selected>Neck</option>
+                                  <option value="Neck 1">Neck Type 1</option>
+                                  <option value="Neck 2">Neck Type 2</option>
+                                  <option value="Neck 3">Neck Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <div class="col">
+                              <select class="row custom-select selectcss" id="orna8">
+                                  <option selected>Ornamentation</option>
+                                  <option value="Ornamentation 1">Ornamentation Type 1</option>
+                                  <option value="Ornamentation 2">Ornamentation Type 2</option>
+                                  <option value="Ornamentation 3">Ornamentation Type 3</option>
+                              </select>
+                            </div>
+                            <br>
+                            <!-- <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Material" id="mat8">
+                              </div>
+                            </div> -->
+                            <br><br>
+                            <div class="row">
+                              <div class="col">
+                                <h5>WASH CARE</h5>
+                              </div>
+                            </div>
+                           <div id="washcare-cont8">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Dry clean" id="w81">
+                              <label class="form-check-label" for="w81">
+                                Dry clean
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Machine Wash" id="w82">
+                              <label class="form-check-label" for="w82">
+                                Machine Wash
+                              </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" value="Hand Wash" id="w83">
+                              <label class="form-check-label" for="w83">
+                                Hand Wash
+                              </label>
+                            </div>
+                           </div>
+                            <br><br>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Fabric 2" id="fab82">
+                              </div>
+                            </div>
+                          <br><br><br>
+                            <div class="row">
+                              <div class="col">
+                                <h5>COLOR 2</h5>
+                              </div>
+                            </div>
+                            <div class="colors">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Maroon" id="col881">
+                                <label class="form-check-label" for="col881">
+                                  Maroon
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Red" id="col882">
+                                <label class="form-check-label" for="col882">
+                                  Red
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Bottle green" id="col883">
+                                <label class="form-check-label" for="col883">
+                                  Bottle green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Pista green" id="col884">
+                                <label class="form-check-label" for="col884">
+                                  Pista green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Brown" id="col885">
+                                <label class="form-check-label" for="col885">
+                                  Brown
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="White" id="col886">
+                                <label class="form-check-label" for="col886">
+                                  White
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Off white" id="col887">
+                                <label class="form-check-label" for="col887">
+                                  Off white
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Black" id="col888">
+                                <label class="form-check-label" for="col888">
+                                  Black
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Rani" id="col88910">
+                                <label class="form-check-label" for="col88910">
+                                  Rani
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Parrot green" id="col8811">
+                                <label class="form-check-label" for="col8811">
+                                  Parrot green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Beige" id="col8812">
+                                <label class="form-check-label" for="col8812">
+                                  Beige
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Orange" id="col8813">
+                                <label class="form-check-label" for="col8813">
+                                  Orange
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Rama green" id="col8814">
+                                <label class="form-check-label" for="col8814">
+                                  Rama green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Mustard" id="col8815">
+                                <label class="form-check-label" for="col8815">
+                                  Mustard
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Purple" id="col8816">
+                                <label class="form-check-label" for="col8816">
+                                  Purple
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Violet" id="col8817">
+                                <label class="form-check-label" for="col8817">
+                                  Violet
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Navy blue" id="col8818">
+                                <label class="form-check-label" for="col8818">
+                                  Navy blue
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Rust" id="col8819">
+                                <label class="form-check-label" for="col8819">
+                                  Rust
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Steel grey" id="col8820">
+                                <label class="form-check-label" for="col8820">
+                                  Steel grey
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Skin" id="col8821">
+                                <label class="form-check-label" for="col8821">
+                                  Skin
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Lavender" id="col8822">
+                                <label class="form-check-label" for="col8822">
+                                  Lavender
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Blue" id="col8823">
+                                <label class="form-check-label" for="col8823">
+                                  Blue
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Peacock green" id="col8824">
+                                <label class="form-check-label" for="col8824">
+                                  Peacock green
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Mehandi" id="col8825">
+                                <label class="form-check-label" for="col8825">
+                                  Mehandi
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Onion" id="col8826">
+                                <label class="form-check-label" for="col8826">
+                                  Onion
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Yellow" id="col8827">
+                                <label class="form-check-label" for="col8827">
+                                  Yellow
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Dark grey" id="col8828">
+                                <label class="form-check-label" for="col8828">
+                                  Dark grey
+                                </label>
+                              </div>
+                              <br><br>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Peach" id="col8829">
+                                <label class="form-check-label" for="col8829">
+                                  Peach
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Tango" id="col8830">
+                                <label class="form-check-label" for="col8830">
+                                  Tango
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="Gold" id="col8831">
+                                <label class="form-check-label" for="col8831">
+                                  Gold
+                                </label>
+                              </div>
+                            </div>
+                            <br><br>
+                            <!-- <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Coupon Code 1" id="cp81">
+                              </div>
+                             </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Coupon Code 2" id="cp82">
+                              </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Coupon Code 3" id="cp83">
+                              </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                              <input type="text" class="form-control inp" placeholder="Discount" id="dis8">
+                              </div>
+                             </div>
+                            <br> -->
+                            <div class="row align-items-center">
+                              <div class="col mt-4">
+                                <button type="button"  type="button"  class="btn btn-primary mt-4" style="width: 150px;" id="submit-btn8">Submit Form</button>
+                              </div>
+                            </div>
+                          </div>
+                        <br><br><br>
                       </div>
-                    </div>
-                    <div class="colors">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Maroon" id="col881">
-                        <label class="form-check-label" for="col881">
-                          Maroon
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Red" id="col882">
-                        <label class="form-check-label" for="col882">
-                          Red
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Bottle green" id="col883">
-                        <label class="form-check-label" for="col883">
-                          Bottle green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Pista green" id="col884">
-                        <label class="form-check-label" for="col884">
-                          Pista green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Brown" id="col885">
-                        <label class="form-check-label" for="col885">
-                          Brown
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="White" id="col886">
-                        <label class="form-check-label" for="col886">
-                          White
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Off white" id="col887">
-                        <label class="form-check-label" for="col887">
-                          Off white
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Black" id="col888">
-                        <label class="form-check-label" for="col888">
-                          Black
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Rani" id="col88910">
-                        <label class="form-check-label" for="col88910">
-                          Rani
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Parrot green" id="col8811">
-                        <label class="form-check-label" for="col8811">
-                          Parrot green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Beige" id="col8812">
-                        <label class="form-check-label" for="col8812">
-                          Beige
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Orange" id="col8813">
-                        <label class="form-check-label" for="col8813">
-                          Orange
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Rama green" id="col8814">
-                        <label class="form-check-label" for="col8814">
-                          Rama green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Mustard" id="col8815">
-                        <label class="form-check-label" for="col8815">
-                          Mustard
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Purple" id="col8816">
-                        <label class="form-check-label" for="col8816">
-                          Purple
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Violet" id="col8817">
-                        <label class="form-check-label" for="col8817">
-                          Violet
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Navy blue" id="col8818">
-                        <label class="form-check-label" for="col8818">
-                          Navy blue
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Rust" id="col8819">
-                        <label class="form-check-label" for="col8819">
-                          Rust
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Steel grey" id="col8820">
-                        <label class="form-check-label" for="col8820">
-                          Steel grey
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Skin" id="col8821">
-                        <label class="form-check-label" for="col8821">
-                          Skin
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Lavender" id="col8822">
-                        <label class="form-check-label" for="col8822">
-                          Lavender
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Blue" id="col8823">
-                        <label class="form-check-label" for="col8823">
-                          Blue
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Peacock green" id="col8824">
-                        <label class="form-check-label" for="col8824">
-                          Peacock green
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Mehandi" id="col8825">
-                        <label class="form-check-label" for="col8825">
-                          Mehandi
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Onion" id="col8826">
-                        <label class="form-check-label" for="col8826">
-                          Onion
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Yellow" id="col8827">
-                        <label class="form-check-label" for="col8827">
-                          Yellow
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Dark grey" id="col8828">
-                        <label class="form-check-label" for="col8828">
-                          Dark grey
-                        </label>
-                      </div>
-                      <br><br>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Peach" id="col8829">
-                        <label class="form-check-label" for="col8829">
-                          Peach
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Tango" id="col8830">
-                        <label class="form-check-label" for="col8830">
-                          Tango
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="Gold" id="col8831">
-                        <label class="form-check-label" for="col8831">
-                          Gold
-                        </label>
-                      </div>
-                    </div>
-                    <br><br>
-                    <!-- <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Coupon Code 1" id="cp81">
-                      </div>
-                     </div>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Coupon Code 2" id="cp82">
-                      </div>
-                    </div>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Coupon Code 3" id="cp83">
-                      </div>
-                    </div>
-                    <div class="row align-items-center mt-4">
-                      <div class="col">
-                      <input type="text" class="form-control inp" placeholder="Discount" id="dis8">
-                      </div>
-                     </div>
-                    <br> -->
-                    <div class="row align-items-center">
-                      <div class="col mt-4">
-                        <button type="button"  type="button"  class="btn btn-primary mt-4" style="width: 150px;" id="submit-btn8">Submit Form</button>
-                      </div>
-                    </div>
                   </div>
-                <br><br><br>
-              </div>
-          </div>
-        </section>
-      </form>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+                </section>
+              </form>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="./add-product.js"></script>
+    <script src="../../src/js/adminportal.js"></script>
 </body>
+
 </html>
