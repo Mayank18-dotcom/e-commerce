@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/css/sign.css">
     <link rel="stylesheet" href="./src/css/commom.css">
+    <script src="./src/js/sign.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -47,39 +48,57 @@
                   <h1>Register</h1>
                 </div>
               </div>
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input type="text" class="form-control inp" placeholder="Full Name">
-                </div>
-              </div>
-              <div class="row align-items-center mt-4">
-                <div class="col">
-                  <input type="email" class="form-control inp" placeholder="Email">
-                </div>
-              </div>
-              <div class="row align-items-center mt-4">
-                <div class="col">
-                  <input type="password" class="form-control inp" placeholder="Password">
-                </div>
-              </div>
-              <div class="row align-items-center mt-4">
-                <div class="col">
-                  <input type="password" class="form-control inp" placeholder="Confirm Password">
-                </div>
-              </div>
-              <div class="row justify-content-start mt-4">
-                <div class="col">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
-                      I Read and Accept <a href="https://www.froala.com">Terms and Conditions</a>
-                    </label>
-                  </div>
-                  <div class="col text-center">
-                    <button class="btn btn-primary mt-4" style="width: 150px;">Submit</button>
+              <form name="myForm" id="registration_form" action="" method="POST">
+                <div class="row align-items-center">
+                  <div class="col mt-4">
+                    <input type="text" class="form-control inp" id="name" placeholder="Enter your name" required>
+                    <span class="error_form" id="name_error_message"></span>
                   </div>
                 </div>
-              </div>
+                <div class="row align-items-center mt-4">
+                  <div class="col">
+                    <input type="email" class="form-control inp" id="email" placeholder="Email" required>
+                    <span class="error_form" id="email_error_message"></span>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                  <div class="col">
+                    <input type="password" class="form-control inp" id="password" placeholder="Password" required>
+                    <span class="error_form" id="password_error_message"></span>
+                  </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                  <div class="col">
+                    <input type="password" class="form-control inp" id="confirm_password" placeholder="Confirm Password" required>
+                    <span class="error_form" id="confirm_password_error_message"></span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col mt-4">
+                    <textarea  class="form-control inp" id="address" placeholder="Address"></textarea>
+                    <span class="error_form" id="address_error_message"></span>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col mt-4">
+                    <input type="tel" class="form-control inp" id="phone_number" placeholder="Phone Number">
+                    <span class="error_form" id="phone_number_error_message"></span>
+                  </div>
+                </div>
+                <div class="row justify-content-start mt-4">
+                  <div class="col">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        I Read and Accept <a href="https://www.froala.com">Terms and Conditions</a>
+                      </label>
+                    </div>
+                    <div class="col text-center">
+                      <button class="btn btn-primary mt-4" style="width: 150px;" type="submit" value="Register" id="submit-btn">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

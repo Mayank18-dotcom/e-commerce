@@ -12,14 +12,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./src/css/style3.css" />
-    <link rel="stylesheet" href="./src/css/adminportal.css" />
+    <link rel="stylesheet" href="./src/css/commom.css" />
+    <link rel="stylesheet" href="./src/css/login.css" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Font Awesome JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    <script src="./src/js/iam.js"></script>
+    <style>
+        .error_form{
+            color: red;
+        }
+        body{
+            background-color: #cccfdd;
+        }
+    </style>
 </head>
 
 <body">
@@ -124,7 +134,39 @@
                     </button>
                 </div>
             </nav>
-            <!-- FORM -->
+            <br><br>
+            <section>
+                <div class="container">
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-8 col-xl-6 card-container">
+                          <div class="row">
+                            <div class="col text-center">
+                              <h1>IAM FORM</h1>
+                            </div>
+                          </div>
+                          <form id="iam_form">
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                                <input type="email" class="form-control inp" placeholder="Email" id="email" required>
+                                <span class="error_form" id="email_error_message"></span>
+                              </div>
+                            </div>
+                            <div class="row align-items-center mt-4">
+                              <div class="col">
+                                <input type="password" class="form-control inp" placeholder="Password" id="pass" required>
+                                <span class="error_form" id="pass_error_message"></span>
+                              </div>
+                            </div>
+                            <div class="row justify-content-start mt-4">
+                                <div class="col text-center">
+                                  <button class="btn btn-primary mt-4" style="width: 150px;">Submit</button>
+                                </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+              </section>
         </div>
     </div>
 

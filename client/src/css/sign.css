@@ -2,6 +2,9 @@ body{
   background-color: #ffffff;
 background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
+.error_form{
+  color: red;
+}
 .card-container {
 	background-color: #231E39;
 	border-radius: 20px;
