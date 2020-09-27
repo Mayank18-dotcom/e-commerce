@@ -1,0 +1,46 @@
+.carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+.imgnav{
+width: 100px;
+height: 50px;
+}
+.sm-last{
+    margin-right: -10px;
+}
+.row2{
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+@media (min-width:1000px) {
+    .carousel-inner{
+        height: 620px;
+    }
+    .card-img-top{
+        width: 220px;
+    }
+}
+
+@media (max-width:426px) {
+    .d-block{
+        height: 250px;
+    }
+    .card{
+        width: 70%;
+        height: 90%;
+        margin-left: 20%;
+    }
+    .card-img-top{
+        height: 70%;
+    }
+    .card-text{
+        font-size: 15px;
+    }
+}
