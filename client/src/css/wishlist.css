@@ -101,3 +101,197 @@ h2 {
 .rem:hover {
     color: red;
 }
+
+/* OLD WISH LIST */
+/* .imgnav{
+    width: 100px;
+    height: 50px;
+}
+.row2{
+    margin-left: 40px;
+    width: 97%;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.col-sm-9{
+    text-align: left;
+}
+.img-card{
+    padding: 0px;
+}
+.imgs{
+    width: 250%;
+    height: 120%;
+}
+.card1{
+    height: 365px;
+}
+.col-sm-1 .img-card{
+    width: 200px;
+}
+.t2{
+    font-size: 30px;
+}
+.add{
+    background-color:  rgb(240, 62, 86);color: white;
+}
+.rem{
+    background-color: rgb(255, 102, 0);color: white;
+}
+.addit{
+    background-color:  rgb(71, 87, 224);color: white;
+}
+@media (min-width: 1000px) {
+    .price{
+        float: right;
+        margin-top: -260px;
+        font-size: 30px;
+    }
+    .bbtn{
+        margin-top: 50px;
+    }
+    .additms{
+        width: 50%;
+        margin-left: 420px;
+    }
+    .imgs{
+        width: 250%;
+        height: 121.5%;
+        margin-left: -14px;
+    }
+    .card1{
+        margin-left: 150px;
+    }
+    .heading{
+        margin-left: 700px;
+    }
+    .details{
+        margin-left: 150px;
+    }
+    .brr1{
+        display: none;
+    }
+}
+@media (max-width: 426px) {
+    .brr{
+        display: none;
+    }
+    .details{
+        margin-left: 0px;
+    }
+    .btntxt{
+        display: none;
+        font-size: 10px;
+    }
+    .row2{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .img-card{
+        margin-left: -15px;
+    }
+    .card-text{
+        padding-right: 0px;
+        font-size: 13px;
+    }
+    .bbtn{
+        font-size: 12px;
+    }
+    .imgs{
+        padding-left: 0px;
+        width: 55%;
+        height: 121.5%;
+    }
+    .col-sm-8{
+        margin-left: -140px;
+        width: 155px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .card2{
+        margin-top: 20px;
+        height: 315px;
+    }
+    .card1{
+        height: 315px;
+        margin-left: 0px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .heading{
+        margin-left: 100px;
+    }
+}
+@media (max-width: 421px) {
+    .imgs{
+        padding-left: 0px;
+        width: 55%;
+        height: 125%;
+    }
+}
+
+@media (max-width: 412px) {
+    .imgs{
+        padding-left: 0px;
+        width: 55%;
+        height: 126%;
+    }
+}
+
+@media (max-width: 401px) {
+    .imgs{
+        padding-left: 0px;
+        width: 55%;
+        height: 130.5%;
+    }
+}
+@media (max-width: 391px) {
+    .imgs{
+        padding-left: 0px;
+        width: 55%;
+        height: 133.5%;
+    }
+}
+@media (max-width: 376px) {
+    .card1{
+        height: 290.5px;
+    }
+    .imgs{
+        padding-left: 0px;
+        width: 50%;
+        height: 140.5%;
+    }
+    .col-sm-8{
+        margin-left: -140px;
+        width: 180px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 361px) {
+    .card1{
+        height: 300px;
+    }
+    .imgs{
+        padding-left: 0px;
+        width: 55%;
+        height: 139%;
+    }
+    .col-sm-8{
+        margin-left: -120px;
+        width: 150px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .add{
+        width: 60px;
+    }
+    .rem{
+        width: 60px;
+    }
+    .btn1{
+        width: 20px;
+        margin-top: -10px;
+    }
+} */
