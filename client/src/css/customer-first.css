@@ -204,59 +204,6 @@ background: #828bb3; }
 .main-categories a {
 color: #000; }
 
-.grid-btn, .list-btn {
-margin-top: 10px;
-width: 40px;
-line-height: 40px;
-border: 1px solid #eee;
-text-align: center;
-margin-right: 10px; }
-.grid-btn i, .list-btn i {
-	display: inline-block; }
-.grid-btn:hover i, .list-btn:hover i {
-	color: #fff; }
-.grid-btn.active i, .list-btn.active i {
-	color: #fff; }
-
-.sorting {
-margin-top: 10px;
-margin-right: 10px; }
-.sorting .nice-select {
-	border-radius: 0px;
-	border: 1px solid #eee;
-	padding-right: 50px; }
-	.sorting .nice-select:after {
-	right: 18px; }
-	.sorting .nice-select .list {
-	border-radius: 0px; }
-
-.pagination {
-margin-top: 10px;
-border-left: 1px solid #eee;
-border-radius: 0px; }
-.pagination a {
-	width: 40px;
-	line-height: 40px;
-	text-align: center;
-	display: inline-block;
-	background: #fff; }
-	.pagination a.active {
-	color: #fff; }
-	.pagination a:hover {
-	color: #fff; }
-.pagination .dot-dot {
-	width: auto;
-	background: transparent;
-	border-top: 0px;
-	border-bottom: 0px;
-	color: #cccccc;
-	padding: 0 5px; }
-	.pagination .dot-dot:hover {
-	background: transparent;
-	border: 0px;
-	border-right: 1px solid #eee;
-	color: #cccccc; }
-
 /* start product area css
 ============================================================================================ */
 .active-product-area {
@@ -415,4 +362,61 @@ border: 0.1px solid grey; }
   
   /* end product area css
   ============================================================================================ */
+
+  
+.list-wrapper {
+	padding: 15px;
+	overflow: hidden;
+}
+
+.list-item {
+	border: 1px solid #EEE;
+	background: #FFF;
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.list-item h4 {
+	color: #FF7182;
+	font-size: 18px;
+	margin: 0 0 5px;	
+}
+
+.list-item p {
+	margin: 0;
+}
+
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: #FF7182;
+	border-color: #FF7182;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: #e04e60;
+}
   
