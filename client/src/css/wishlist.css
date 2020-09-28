@@ -95,9 +95,9 @@ h2 {
 .price_indiv p {
     font-size: 1.1rem;
 }
-.wish:hover {
-    color: red;
+.bag:hover {
+    color: blue;
 }
 .rem:hover {
-    color: blue;
+    color: red;
 }
