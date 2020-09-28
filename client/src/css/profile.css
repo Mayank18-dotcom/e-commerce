@@ -38,14 +38,14 @@
 
 .card__profile img {
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
+  height: 7rem;
+  width: 7rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .card__name {
-  margin-left: 1.25rem;
+  margin-left: 2rem;
 }
 
 .card__handle {
@@ -227,7 +227,7 @@ span.circle {
 }
 
 .number {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,10 +248,8 @@ span.circle {
           align-items: center;
   font-weight: normal;
 }
-
-.number .info svg {
-  height: 15px;
-  width: 15px;
+.cbtn{
+  display: none;
 }
 
 @media (max-width: 1381px) {
@@ -304,6 +302,9 @@ span.circle {
 @media (max-width: 475px) {
   .card__button {
     display: none;
+  }
+  .cbtn{
+    display: block;
   }
   .card {
       margin-left: 5%;
