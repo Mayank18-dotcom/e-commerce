@@ -27,6 +27,9 @@ height: 50px;
     color: crimson;
 }
 @media (min-width:1000px) {
+	.d-block{
+		height: 600px;
+	}
     .carousel-inner{
         height: 620px;
     }
@@ -45,7 +48,7 @@ height: 50px;
 
 @media (max-width:426px) {
     .d-block{
-        height: 250px;
+        height: 180px;
     }
     .card{
         width: 70%;
