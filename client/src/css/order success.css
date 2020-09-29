@@ -1,0 +1,35 @@
+.success-page{
+    max-width:300px;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+        position: relative;
+      top: 50%;
+      transform: perspective(1px) translateY(50%)
+  }
+  .success-page img{
+    max-width:62px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .btn-view-orders{
+    display: block;
+    border:1px solid rgb(51, 51, 51);
+    width:100px;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding: 10px;
+    color:#fff;
+    background-color:rgb(51, 51, 51);
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  h2{
+    color:rgb(51, 51, 51);
+      margin-top: 25px;
+  
+  }
+  a{
+    text-decoration: none;
+  }
