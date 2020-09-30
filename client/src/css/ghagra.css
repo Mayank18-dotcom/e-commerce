@@ -95,6 +95,12 @@ h7{
 .fa-shopping-bag{
   padding-right: 10px;
   color: whitesmoke;
+  padding-left: 20px;
+}
+.fa-bookmark{
+  padding-right: 10px;
+  color: whitesmoke;
+  font-size: 15px;
 }
 @media screen and (max-width:769px) {
   .tbl{
