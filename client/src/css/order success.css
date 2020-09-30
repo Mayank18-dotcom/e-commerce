@@ -1,22 +1,117 @@
-.success-page{
-    max-width:300px;
-    display:block;
-    margin: 0 auto;
-    text-align: center;
-        position: relative;
-      top: 50%;
-      transform: perspective(1px) translateY(50%)
+
+
+.alert {
+  background: #f8d7da;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+  .animation-ctn{
+      text-align:center;
+      margin: 5em auto;
   }
-  .success-page img{
-    max-width:62px;
-    display: block;
-    margin: 0 auto;
+
+  @-webkit-keyframes checkmark {
+  0% {
+      stroke-dashoffset: 100px
   }
-  
+
+  100% {
+      stroke-dashoffset: 200px
+  }
+  }
+
+  @-ms-keyframes checkmark {
+  0% {
+      stroke-dashoffset: 100px
+  }
+
+  100% {
+      stroke-dashoffset: 200px
+  }
+  }
+
+  @keyframes checkmark {
+  0% {
+      stroke-dashoffset: 100px
+  }
+
+  100% {
+      stroke-dashoffset: 0px
+  }
+  }
+
+  @-webkit-keyframes checkmark-circle {
+  0% {
+      stroke-dashoffset: 480px
+
+  }
+
+  100% {
+      stroke-dashoffset: 960px;
+
+  }
+  }
+
+  @-ms-keyframes checkmark-circle {
+  0% {
+      stroke-dashoffset: 240px
+  }
+
+  100% {
+      stroke-dashoffset: 480px
+  }
+  }
+
+  @keyframes checkmark-circle {
+  0% {
+      stroke-dashoffset: 480px
+  }
+
+  100% {
+      stroke-dashoffset: 960px
+  }
+  }
+
+  @keyframes colored-circle {
+  0% {
+      opacity:0
+  }
+
+  100% {
+      opacity:100
+  }
+  }
+
+  /* other styles */
+  /* .svg svg {
+  display: none
+  }
+  */
+  .inlinesvg .svg svg {
+  display: inline
+  }
+
+  /* .svg img {
+  display: none
+  } */
+
+  .icon--order-success svg polyline {
+  -webkit-animation: checkmark 0.3s ease-in-out 0.9s backwards;
+  animation: checkmark 0.3s ease-in-out 0.9s backwards
+  }
+
+  .icon--order-success svg circle {
+  -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+  animation: checkmark-circle 0.6s ease-in-out backwards;
+  }
+  .icon--order-success svg circle#colored {
+  -webkit-animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+  animation: colored-circle 0.6s ease-in-out 0.7s backwards;
+  }
   .btn-view-orders{
     display: block;
     border:1px solid rgb(51, 51, 51);
-    width:100px;
+    width:120px;
     margin: 0 auto;
     margin-top: 45px;
     padding: 10px;
@@ -24,11 +119,6 @@
     background-color:rgb(51, 51, 51);
     text-decoration: none;
     margin-bottom: 20px;
-  }
-  h2{
-    color:rgb(51, 51, 51);
-      margin-top: 25px;
-  
   }
   a{
     text-decoration: none;
