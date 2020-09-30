@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/ghagra.css" />
+    <link rel="stylesheet" href="./src/css/commom.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"
+        ><img class="imgnav" src="./src/img/sds1.jpg"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >MEN <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >WOMEN <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >KIDS <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >HOME & LIVING <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >OFFERS<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search Product"
+            aria-label="Search"
+          />
+          <button class="btn my-2 my-sm-0" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+        <div class="form-inline my-2 my-lg-0 nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">WELCOME</a>
+            <a class="dropdown-item" href="#">Login / signup</a>
+            <a class="dropdown-item" href="#">My cart</a>
+            <a class="dropdown-item" href="#">My wish list</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <div class="row row2">
+      <div class="col-md-3 col-sm-3">
+        <img
+          class="iimg"
+          src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8969717/2019/3/28/e448c9a1-3a0f-40e7-b267-1bf44a44ba501553778956208-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-1.jpg"
+        />
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <img
+          class="iimg"
+          src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8969717/2019/3/28/6018cc0a-56b8-483f-9576-8644f5bdedd21553778956066-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-6.jpg"
+        />
+      </div>
+      <div class="col-md-4 col-sm-4 mrr">
+        <div class="row row1 details"><h3 id="title">Leggings</h3></div>
+        <div class="row row1 details">
+          <h6 id="sub-title">Beige & Pink Leggings</h6>
+        </div>
+        <br />
+        <div class="row row1 details">
+          <h4>Price:</h4>
+          &nbsp;
+          <h4 class="strike">Rs. 3000</h4>
+          &nbsp;
+          <h4 id="price">Rs. 2000</h4>
+          &nbsp;
+          <h4 id="dis">(20%)</h4>
+        </div>
+        <br />
+        <div class="row row1 details">
+          <h6>Sub Categories :</h6>
+          &nbsp;
+          <h6 id="sub-cat">Simple</h6>
+        </div>
+        <br />
+        <div class="row row1 details boxed" id="size">
+          <h6>Select Size :</h6>
+          &nbsp;&nbsp;
+          <input type="radio" id="XS" name="size" value="XS" />
+          <label for="XS">XS</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="S" name="size" value="S" />
+          <label for="S">S</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="M" name="size" value="M" />
+          <label for="M">M</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="L" name="size" value="L" />
+          <label for="L">L</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="XL" name="size" value="XL" />
+          <label for="XL">XL</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="XLL" name="size" value="XLL" />
+          <label for="XLL">XLL</label>
+        </div>
+        <br />
+        <div class="row row1 details"><h6>COLORS</h6></div>
+        <label class="orange">
+          <input type="radio" id="color" name="color" value="orange" />
+          <div class="button"><span></span></div>
+        </label>
+        <label class="amber">
+          <input type="radio" id="color" name="color" value="amber" />
+          <div class="button"><span></span></div>
+        </label>
+
+        <label class="lime">
+          <input type="radio" id="color" name="color" value="lime" />
+          <div class="button"><span></span></div>
+        </label>
+
+        <label class="teal">
+          <input type="radio" id="color" name="color" value="teal" />
+          <div class="button"><span></span></div>
+        </label>
+
+        <label class="blue">
+          <input type="radio" id="color" name="color" value="blue" />
+          <div class="button"><span></span></div>
+        </label>
+
+        <label class="indigo">
+          <input type="radio" id="color" name="color" value="indigo" />
+          <div class="button"><span></span></div>
+        </label>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col-md-3 col-sm-3 mimg">
+        <img
+          class="iimg"
+          src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8969717/2019/3/28/d775b42b-1779-4eb7-a600-6a11cfbee0e31553778956098-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-5.jpg"
+        />
+      </div>
+      <div class="col-md-3 col-sm-3 mimg">
+        <img
+          class="iimg"
+          src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8969717/2019/3/28/71903a3d-5af7-4043-bc91-1b93fa55618f1553778956183-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-2.jpg"
+        />
+      </div>
+      <div class="col-md-4 col-sm-4 mrr">
+        <hr class="hrr" />
+        <div class="row row1 details"><h6>Product Description</h6></div>
+        <div class="row row1 details">
+          <p class="details" id="des">
+            Beige and pink yoke design kurta with palazzos and dupatta Beige and
+            pink yoke design straight calf length kurta, has a round neck,
+            three-quarter sleeves, side slits Beige solid palazzos with hem
+            design, has an elasticated waistband with slip-on closure Beige and
+            pink self striped dupatta, has tasselled border Beige and pink yoke
+            design kurta with palazzos and dupatta
+          </p>
+        </div>
+        <div class="row row1 details"><h7>100% Original Products</h7></div>
+        <div class="row row1 details">
+          <h7>Free Delivery on order above Rs. 799</h7>
+        </div>
+        <div class="row row1 details">
+          <h7>Pay on delivery might be available</h7>
+        </div>
+        <div class="row row1 details">
+          <h7>Easy 30 days returns and exchanges</h7>
+        </div>
+        <div class="row row1 details">
+          <h7>Try & Buy might be available</h7>
+        </div>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="col-md-3 col-sm-3 mimg">
+        <img
+          class="iimg"
+          src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8969717/2019/3/28/6018cc0a-56b8-483f-9576-8644f5bdedd21553778956066-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-6.jpg"
+        />
+      </div>
+      <div class="col-md-3 col-sm-3 mimg">
+        <img
+          class="iimg"
+          src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8969717/2019/3/28/e448c9a1-3a0f-40e7-b267-1bf44a44ba501553778956208-Indo-Era-Beige-Solid-Straight-Kurta-Sets-9801553778954623-1.jpg"
+        />
+      </div>
+      <div class="col-md-4 col-sm-4 mrr">
+        <hr class="hrr" />
+        <div class="row">
+          <div class="col details grids">
+            <h6>Brand</h6>
+            <h7 id="brand">Lyara</h7>
+          </div>
+          <div class="col details grids">
+            <h6>Type</h6>
+            <h7 id="type">Type 1 </h7>
+          </div>
+        </div>
+        <hr class="hrr" />
+        <div class="row">
+          <div class="col details grids">
+            <h6>Occasaion</h6>
+            <h7 id="occasaion">Wedding,Traditional</h7>
+          </div>
+          <div class="col details grids">
+            <h6>Fabric</h6>
+            <h7 id="fabric">Fabric 1</h7>
+          </div>
+        </div>
+        <hr class="hrr" />
+        <div class="row">
+          <div class="col details grids">
+            <h6>Material</h6>
+            <h7 id="material">Material 1</h7>
+          </div>
+          <div class="col details grids">
+            <h6>Wash care</h6>
+            <h7 id="wash-care">Machine Wash , Hand Wash</h7>
+          </div>
+        </div>
+        <br /><br /><br />
+        <div class="row row1 details btn1">
+          <a
+            href="#"
+            class="btn btn-lg"
+            role="button"
+            aria-pressed="true"
+            style="background-color: rgb(240, 62, 86)"
+            ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+            ><b style="color: whitesmoke">ADD TO BAG</b></a
+          >
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <!--  NEW -->
+    <h4 style="text-align: center">CUSTOMERS ALSO LIKED</h4>
+    <br />
+    <div class="row row2">
+      <div class="col-md-3 col-sm-3">
+        <div class="card mr-2 mt-2 shadow-sm">
+          <a href="#">
+            <img
+              class="card-img-top"
+              src="https://assets.myntassets.com/h_560,q_90,w_420/v1/assets/images/9565501/2019/5/8/aa78186a-9c04-4e42-b5b8-6ce7bd9c3c401557311695707-Janasya-turquoise-blue-7861557311694458-1.jpg"
+              alt="Card image"
+              style="width: 100%; height: auto"
+            />
+          </a>
+          <div class="card-body text-left">
+            <h4 class="card-title" style="color: crimson">Indo Era</h4>
+            <p class="card-text">Woolen Stole Rs. 597</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <div class="card mr-2 mt-2 shadow-sm">
+          <a href="#">
+            <img
+              class="card-img-top"
+              src="https://assets.myntassets.com/h_560,q_90,w_420/v1/assets/images/9565501/2019/5/8/aa78186a-9c04-4e42-b5b8-6ce7bd9c3c401557311695707-Janasya-turquoise-blue-7861557311694458-1.jpg"
+              alt="Card image"
+              style="width: 100%; height: auto"
+            />
+          </a>
+          <div class="card-body text-left">
+            <h4 class="card-title" style="color: crimson">Indo Era</h4>
+            <p class="card-text">Woolen Stole Rs. 597</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <div class="card mr-2 mt-2 shadow-sm">
+          <a href="#">
+            <img
+              class="card-img-top"
+              src="https://assets.myntassets.com/h_560,q_90,w_420/v1/assets/images/9565501/2019/5/8/aa78186a-9c04-4e42-b5b8-6ce7bd9c3c401557311695707-Janasya-turquoise-blue-7861557311694458-1.jpg"
+              alt="Card image"
+              style="width: 100%; height: auto"
+            />
+          </a>
+          <div class="card-body text-left">
+            <h4 class="card-title" style="color: crimson">Indo Era</h4>
+            <p class="card-text">Woolen Stole Rs. 597</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <div class="card mr-2 mt-2 shadow-sm">
+          <a href="#">
+            <img
+              class="card-img-top"
+              src="https://assets.myntassets.com/h_560,q_90,w_420/v1/assets/images/9565501/2019/5/8/aa78186a-9c04-4e42-b5b8-6ce7bd9c3c401557311695707-Janasya-turquoise-blue-7861557311694458-1.jpg"
+              alt="Card image"
+              style="width: 100%; height: auto"
+            />
+          </a>
+          <div class="card-body text-left">
+            <h4 class="card-title" style="color: crimson">Indo Era</h4>
+            <p class="card-text">Woolen Stole Rs. 597</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <!-- FOOTER START -->
+    <div class="footer"></div>
+    <!-- END OF FOOTER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./src/js/common.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/home.js"></script>
+  </body>
+</html>
