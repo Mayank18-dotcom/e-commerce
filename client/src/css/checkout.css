@@ -1,0 +1,28 @@
+.imgnav{
+    width: 100px;
+    height: 50px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+.card{
+    margin-left:500px ;
+    width: 500px;
+}
+.row1{
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-link{
+    float: right;
+}
+#change-add{
+    display: none;
+}
+.card-title,.card-subtitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width:426px){
+    .card{
+        margin-left:0px ;
+        width: 100%;
+    }
+  }

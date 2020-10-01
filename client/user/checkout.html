@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/checkout.css" />
+    <link rel="stylesheet" href="../src/css/commom.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          ><img class="imgnav" src="../src/img/sds1.jpg"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >HOME <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >ABOUT US <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >TESTIMONIALS <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >CONTACT US <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+  
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search Product"
+              aria-label="Search"
+            />
+            <button class="btn my-2 my-sm-0" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+          <div class="form-inline my-2 my-lg-0 nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">WELCOME</a>
+              <a class="dropdown-item" href="#">Login / signup</a>
+              <a class="dropdown-item" href="#">My cart</a>
+              <a class="dropdown-item" href="#">My wish list</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br />
+
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center;">Checkout</h2>
+          <h5 class="card-subtitle mb-2 text-muted">Details : </h5>
+          <br>
+          <div class="row row1">
+            <div class="col-4 grids">
+              <h6>Name</h6>
+            </div>
+            <div class="col grids">
+              <h7 id="name">Aman Kummar</h7>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-4 grids">
+              <h6>Email</h6>
+            </div>
+            <div class="col grids">
+              <h7 id="email">Aman@gmail.com</h7>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-4 grids">
+              <h6>Phone Number</h6>
+            </div>
+            <div class="col grids">
+              <h7 id="phone">+91 1234098760</h7>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-4 grids">
+              <h6>Address</h6>
+            </div>
+            <div class="col grids">
+              <h7 id="state">Tamil Nadu</h7><br>
+              <h7 id="city">Chennai</h7><br>
+              <h7 id="add">H.No. 5,Area name, near some mall</h7><br>
+              <h7 id="pin">T200300</h7>
+            </div>
+          </div>
+          <a href="#" class="card-link" id="chadd">Change Address</a>
+        </div>
+      </div>
+      <br><br>
+      <div class="card" id="change-add">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center;">Change address</h2>
+          
+          <form>
+            <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state" placeholder="Enter state">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter city">
+              </div>
+              <div class="form-group">
+                <label for="add">Address</label>
+                <input type="text" class="form-control" id="add" placeholder="Enter address">
+              </div>
+              <div class="form-group">
+                <label for="pin">text Pin code</label>
+                <input type="email" class="form-control" id="pin" aria-describedby="emailHelp" placeholder="Enter PIN">
+              </div>
+            <button type="submit" class="btn btn-primary" id="chadd1">Change</button>
+          </form>
+        </div>
+      </div>
+      <br><br>
+    <!-- FOOTER START -->
+    <div class="footer"></div>
+    <!-- END OF FOOTER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../src/js/common.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/js/home.js"></script>
+    <script src="../src/js/checkout.js"></script>
+</body>
+</html>
