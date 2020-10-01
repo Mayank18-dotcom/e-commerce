@@ -2,7 +2,7 @@
 
 var items = $(".list-wrapper .list-item");
     var numItems = items.length;
-    var perPage = 6;
+    var perPage = 24;
 
     items.slice(perPage).hide();
 

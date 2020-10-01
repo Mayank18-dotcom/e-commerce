@@ -41,6 +41,11 @@ h2 {
     text-transform: capitalize;
     font-weight: 500;
 }
+.card-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 .card-title p {
     font-size: 0.9rem;
     font-weight: 500;
@@ -95,9 +100,17 @@ h2 {
 .price_indiv p {
     font-size: 1.1rem;
 }
+.bag{
+    text-align: center;
+}
+.rem{
+    text-align: center;
+}
 .bag:hover {
     color: blue;
+    cursor: pointer;
 }
 .rem:hover {
     color: red;
+    cursor: pointer;
 }

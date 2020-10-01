@@ -41,9 +41,15 @@ h2 {
     text-transform: capitalize;
     font-weight: 500;
 }
+.card-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 .card-title p {
     font-size: 0.9rem;
     font-weight: 500;
+    width: 200px;
 }
 .remove-and-wish p {
     font-size: 0.8rem;
@@ -95,9 +101,17 @@ h2 {
 .price_indiv p {
     font-size: 1.1rem;
 }
+.wish{
+    text-align: center;
+}
+.rem{
+    text-align: center;
+}
 .wish:hover {
     color: red;
+    cursor: pointer;
 }
 .rem:hover {
     color: blue;
+    cursor: pointer;
 }
