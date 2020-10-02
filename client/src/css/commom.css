@@ -1,4 +1,7 @@
-
+.imgnav{
+  width: 100px;
+  height: 50px;
+}
 /* STYLES SPECIFIC TO NAVBAR  */
 .navbar{
     color: black;

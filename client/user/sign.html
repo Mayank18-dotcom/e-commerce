@@ -19,8 +19,11 @@
     <title>Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand" style="color: white" href="#">Deepak Saares</a>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#"
+        ><img class="imgnav" src="../src/img/sds1.jpg"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,25 +35,30 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html" style="color: white"
-              >Home <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="../index.html"
+              >HOME <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./cart.html" style="color: white"
-              >My Cart <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="#"
+              >ABOUT US <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./profile.html" style="color: white"
-              >Account <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="#"
+              >TESTIMONIALS <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html"
+              >CONTACT US <span class="sr-only">(current)</span></a
             >
           </li>
         </ul>
+
         <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
@@ -58,10 +66,31 @@
             placeholder="Search Product"
             aria-label="Search"
           />
-          <button class="btn my-2 my-sm-0" type="submit">
-            <i style="color: white" class="fa fa-search" aria-hidden="true"></i>
-          </button>
         </form>
+        <button class="btn my-2 my-sm-0" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <div class="form-inline my-2 my-lg-0 nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">WELCOME</a>
+            <a class="dropdown-item" href="./sign.html">Signup</a>
+              <a class="dropdown-item" href="./login.html">Login</a>
+              <a class="dropdown-item" href="./cart.html">My cart</a>
+              <a class="dropdown-item" href="./wishlist.html">My wish list</a>
+            <a href="#" class="dropdown-item logout-user-btn">Logout</a>
+          </div>
+        </div>
       </div>
     </nav>
     <br /><br /><br /><br /><br />
@@ -160,14 +189,8 @@
                     </label>
                   </div>
                   <div class="col text-center">
-                    <button
-                      class="btn btn-primary mt-4"
-                      style="width: 150px"
-                      type="submit"
-                      value="Register"
-                      id="submit-btn"
-                    >
-                      Submit
+                    <button class="btn mt-4" style="width: 150px;background-color: rgb(164, 52, 147);">
+                      <b style="color: aliceblue;">Submit</b>
                     </button>
                   </div>
                 </div>
