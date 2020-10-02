@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -13,13 +14,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../src/css/sign.css" />
+    <link rel="stylesheet" href="../src/css/login.css" />
     <link rel="stylesheet" href="../src/css/commom.css" />
-    <title>Home</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <a class="navbar-brand" style="color: white" href="#">Deepak Saares</a>
+  <body class="bg-light">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#"
+        ><img class="imgnav" src="../src/img/sds1.jpg"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -31,172 +34,149 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="../index.html" style="color: white"
-              >Home <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="../index.html"
+              >HOME <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./cart.html" style="color: white"
-              >My Cart <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="#"
+              >ABOUT US <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="./profile.html" style="color: white"
-              >Account <span class="sr-only">(current)</span></a
+            <a class="nav-link" href="#"
+              >TESTIMONIALS <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html"
+              >CONTACT US <span class="sr-only">(current)</span></a
             >
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+
+        <form class="form-inline my-2 my-lg-0 searchit">
           <input
             class="form-control mr-sm-2"
             type="search"
             placeholder="Search Product"
             aria-label="Search"
           />
-          <button class="btn my-2 my-sm-0" type="submit">
-            <i style="color: white" class="fa fa-search" aria-hidden="true"></i>
-          </button>
         </form>
-      </div>
-    </nav>
-    <br /><br /><br /><br /><br />
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div
-            class="col-12 col-md-8 col-lg-8 col-xl-6 card-container bg-secondary"
+        <button class="btn my-2 my-sm-0" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+        <div class="form-inline my-2 my-lg-0 nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
           >
-            <div class="row">
-              <div class="col text-center">
-                <h1>Edit profile</h1>
-              </div>
-            </div>
-            <form name="myForm" id="registration_form" action="" method="POST">
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input
-                    type="text"
-                    class="form-control inp"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                  />
-                  <span class="error_form" id="name_error_message"></span>
-                </div>
-              </div>
-              <div class="row align-items-center mt-4">
-                <div class="col">
-                  <input
-                    type="email"
-                    class="form-control inp"
-                    id="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <span class="error_form" id="email_error_message"></span>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input
-                    type="text"
-                    class="form-control inp"
-                    id="state"
-                    placeholder="Enter your State"
-                    required
-                  />
-                  <span class="error_form" id="state_error_message"></span>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input
-                    type="text"
-                    class="form-control inp"
-                    id="city"
-                    placeholder="Enter your city"
-                    required
-                  />
-                  <span class="error_form" id="city_error_message"></span>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input
-                    type="text"
-                    class="form-control inp"
-                    id="location"
-                    placeholder="Enter your location"
-                    required
-                  />
-                  <span class="error_form" id="location_error_message"></span>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input
-                    type="text"
-                    class="form-control inp"
-                    id="pincode"
-                    placeholder="Enter your pincode"
-                    required
-                  />
-                  <span class="error_form" id="pincode_error_message"></span>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col mt-4">
-                  <input
-                    type="tel"
-                    class="form-control inp"
-                    id="phone_number"
-                    placeholder="Phone Number"
-                  />
-                  <span
-                    class="error_form"
-                    id="phone_number_error_message"
-                  ></span>
-                </div>
-              </div>
-              <div class="row justify-content-start mt-4">
-                <div class="col">
-                  <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" />
-                      I Read and Accept
-                      <a href="https://www.froala.com" style="color: black"
-                        >Terms and Conditions</a
-                      >
-                    </label>
-                  </div>
-                  <div class="col text-center">
-                    <button
-                      class="btn btn-dark mt-4"
-                      style="width: 150px"
-                      type="submit"
-                      value="Register"
-                      id="submit-btn"
-                    >
-                      Update
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">WELCOME</a>
+            <a class="dropdown-item" href="./sign.html">Signup</a>
+              <a class="dropdown-item" href="./login.html">Login</a>
+              <a class="dropdown-item" href="./cart.html">My cart</a>
+              <a class="dropdown-item" href="./wishlist.html">My wish list</a>
+            <a href="#" class="dropdown-item logout-user-btn">Logout</a>
           </div>
         </div>
       </div>
-    </section>
-    <br /><br /><br /><br /><br /><br />
+    </nav>
+    <br />
+      <div class="login-content">
+        <form name="myForm" id="registration_form" action="" method="POST">
+          <img src="../src/img/avatar.svg">
+          <h2 class="title">Edit Profile</h2>
+            <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-user" style="color: gray;"></i>
+                </div>
+                <div class="div">
+                  <h5>Username</h5>
+                  <input type="text" class="input" id="name">
+                </div>
+            </div>
+            <span class="error_form" id="name_error_message"></span>
+            <div class="input-div">
+              <div class="i">
+                <i class="fa fa-envelope" style="color: gray;"></i>
+              </div>
+              <div class="div">
+                <h5>Email</h5>
+                <input type="email" class="input" id="email">
+              </div>
+          </div>
+          <span class="error_form" id="email_error_message"></span>
+          <div class="input-div">
+            <div class="i">
+              <i class="fa fa-map-marker" style="color: gray;"></i>
+            </div>
+            <div class="div">
+              <h5>State</h5>
+              <input type="text" class="input" id="state">
+            </div>
+          </div>
+          <span class="error_form" id="state_error_message"></span>
+          <div class="input-div">
+            <div class="i">
+             <i class="fa fa-map-marker" style="color: gray;"></i>
+            </div>
+            <div class="div">
+              <h5>City</h5>
+              <input type="text" class="input" id="city">
+            </div>
+          </div>
+          <span class="error_form" id="city_error_message"></span>
+          <div class="input-div">
+            <div class="i">
+              <i class="fa fa-address-card" style="color: gray;"></i>
+            </div>
+            <div class="div">
+              <h5>Credentials</h5>
+              <input type="text" class="input" id="location">
+            </div>
+          </div>
+          <span class="error_form" id="location_error_message"></span>
+          <div class="input-div">
+            <div class="i">
+              <i class="fa fa-map-marker" style="color: gray;"></i>
+            </div>
+            <div class="div">
+              <h5>PIN</h5>
+              <input type="text" class="input" id="pincode">
+            </div>
+          </div>
+          <span class="error_form" id="pincode_error_message"></span>
+          <div class="input-div">
+            <div class="i">
+              <i class="fa fa-phone" style="color: gray;"></i>
+            </div>
+            <div class="div">
+              <h5>Phone Number</h5>
+              <input type="text" class="input" id="phone_number">
+            </div>
+          </div>
+          <span class="error_form" id="phone_number_error_message"></span>
+          <br>
+                <input type="submit" class="btn btn1" value="Update" id="submit-btn">
+          </form>
+      </div>
+      <br />
     <!-- FOOTER START -->
     <div class="footer"></div>
+
     <!-- END OF FOOTER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../src/js/common.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -207,6 +187,9 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="../src/js/form.js"></script>
+    <script src="../src/js/common.js"></script>
     <script src="../src/js/sign.js"></script>
+    <script src="./user-scripts/user-register.js"></script>
   </body>
 </html>
