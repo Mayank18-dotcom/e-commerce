@@ -12,7 +12,7 @@ li,ul{list-style:none;
 }
 
 .sec-title .title{position:relative;
-    color:#00b8ca;
+    color:rgb(164, 52, 147);
     font-size:18px;
     font-weight:700;
     padding-right:50px;
@@ -48,7 +48,7 @@ li,ul{list-style:none;
     
 .contact-page-section .inner-container{position:relative;
     z-index:1;
-    background-color:#00b8ca;
+    background-color:rgb(164, 52, 147);
     box-shadow:0 0px 15px 0px rgba(0,0,0,.1)
 }
 
@@ -123,7 +123,7 @@ li,ul{list-style:none;
 
 .contact-form input[type=text]:focus,
 .contact-form input[type=email]:focus,
-.contact-form textarea:focus{border-color:#00b8ca
+.contact-form textarea:focus{border-color:rgb(164, 52, 147)
 }
 
 .contact-form textarea{height:250px;
@@ -135,9 +135,9 @@ li,ul{list-style:none;
     margin-top:10px;
     text-transform:capitalize;
     padding:16px 39px;
-    border:2px solid #00b8ca;
+    border:2px solid rgb(164, 52, 147);
     font-family:Arimo,sans-serif;
-    background:#00b8ca;
+    background:rgb(164, 52, 147);
     display:inline-block;
     position:relative;
     line-height:24px;
@@ -145,8 +145,8 @@ li,ul{list-style:none;
     color:#fff
 }
 
-.contact-form .theme-btn:hover{color:#00b8ca;
-    border-color:#00b8ca;
+.contact-form .theme-btn:hover{color:rgb(164, 52, 147);
+    border-color:rgb(164, 52, 147);
     background:0 0
 }
 

@@ -108,10 +108,20 @@ h2 {
     text-align: center;
 }
 .wish:hover {
-    color: red;
+    color: blue;
     cursor: pointer;
 }
 .rem:hover {
-    color: blue;
+    color: red;
     cursor: pointer;
+}
+@media (max-width: 475px){
+    a{
+        font-size: 13px;
+    }
+    .page-link{
+        font-size: 15px;
+        height: 30px;
+        width: 35px;
+    }
 }
