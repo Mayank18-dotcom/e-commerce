@@ -2,11 +2,15 @@ $("#add-btn").on("click", function (event) {
    event.preventDefault();
    var username = $("#username").val();
    var pass = $("#pass").val();
+   var confirm_pass = $("#confirm_pass").val();
+   var phone_number = $("#phone_number").val();
    console.log(username, pass);
    if (username && pass) {
      let body = {
        email: username,
        password: pass,
+       confirm_password:confirm_pass,
+       number : phone_number
      };
      $.ajax({
        url:

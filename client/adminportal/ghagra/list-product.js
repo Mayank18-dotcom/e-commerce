@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $.ajax({
     url:
-      "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/ghahgra/retrieve.php",
+      "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/ghagra/retrieve.php",
     type: "GET",
     success: function (response) {
       response.data.forEach((product, index) => {

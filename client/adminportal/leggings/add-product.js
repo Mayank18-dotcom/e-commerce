@@ -1,32 +1,14 @@
-$(document).ready(function () {
-  $("#sidebar").mCustomScrollbar({
-      theme: "minimal"
-  });
-
-  $('#dismiss, .overlay').on('click', function () {
-      $('#sidebar').removeClass('active');
-      $('.overlay').removeClass('active');
-  });
-
-  $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').addClass('active');
-      $('.overlay').addClass('active');
-      $('.collapse.in').toggleClass('in');
-      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-  });
-});
 $("#submit-btn6").click(function () {
   console.log("Call add product API");
   let id = $("#id6").val();
   let title = $("#title6").val();
   let sub_title = $("#sub_title6").val();
   let price = $("#price6").val();
-  let brand= $("#brand6").val();
+  let brand = $("#brand6").val();
   let description = $("#des6").val();
   let material = $("#mat6").val();
-  let type= $("#type6").val();
-  let fabric= $("#faab6").val();
-
+  let type = $("#type6").val();
+  let fabric = $("#faab6").val();
 
   // For sizes
   var sizes = [];
@@ -48,7 +30,7 @@ $("#submit-btn6").click(function () {
     productid: id,
     title: title,
     subtitle: sub_title,
-    brand:brand,
+    brand: brand,
     price: price,
     // colors
     // image1
@@ -57,10 +39,10 @@ $("#submit-btn6").click(function () {
     // image4
     // image5
     // image6
-    description:description,
+    description: description,
     type: type,
-    fabric:fabric,
-    material:material
+    fabric: fabric,
+    material: material,
     // washcare1
     // washcare2
     // washcare3
@@ -92,38 +74,4 @@ $("#submit-btn6").click(function () {
       alert("Something went wrong");
     },
   });
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });

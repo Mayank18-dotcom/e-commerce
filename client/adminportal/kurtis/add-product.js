@@ -1,20 +1,3 @@
-$(document).ready(function () {
-  $("#sidebar").mCustomScrollbar({
-      theme: "minimal"
-  });
-
-  $('#dismiss, .overlay').on('click', function () {
-      $('#sidebar').removeClass('active');
-      $('.overlay').removeClass('active');
-  });
-
-  $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').addClass('active');
-      $('.overlay').addClass('active');
-      $('.collapse.in').toggleClass('in');
-      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-  });
-});
 $("#submit-btn8").click(function () {
   console.log("Call add product API");
 
@@ -27,14 +10,14 @@ $("#submit-btn8").click(function () {
   let kfl = $("#kfl8").val();
   let bfl = $("#bfl8").val();
   let dl = $("#dl8").val();
-  let type= $("#type8").val();
-  let fabric= $("#faab8").val();
-  let kl= $("#kl8").val();
-  let sl= $("#sl8").val();
-  let ss= $("#ss8").val();
-  let neck= $("#neck8").val();
-  let ornamentation= $("#orna8").val();
-  let fabric2= $("#fab82").val();
+  let type = $("#type8").val();
+  let fabric = $("#faab8").val();
+  let kl = $("#kl8").val();
+  let sl = $("#sl8").val();
+  let ss = $("#ss8").val();
+  let neck = $("#neck8").val();
+  let ornamentation = $("#orna8").val();
+  let fabric2 = $("#fab82").val();
 
   // For sizes
   var sizes = [];
@@ -54,7 +37,7 @@ $("#submit-btn8").click(function () {
 
   var finalbody = {
     productid: id,
-    subcategory:sub_category,
+    subcategory: sub_category,
     title: title,
     subtitle: sub_title,
     price: price,
@@ -65,23 +48,22 @@ $("#submit-btn8").click(function () {
     // image4
     // image5
     // image6
-    description:description,
+    description: description,
     kfl: kfl,
     bfl: bfl,
     dl: dl,
     type: type,
-    fabric:fabric,
-    kl:kl,
-    sl:sl,
-    ss:ss,
-    neck:neck,
-    ornamentation:ornamentation,
-    fabric2:fabric2
+    fabric: fabric,
+    kl: kl,
+    sl: sl,
+    ss: ss,
+    neck: neck,
+    ornamentation: ornamentation,
+    fabric2: fabric2,
     // washcare1
     // washcare2
     // washcare3
   };
-
 
   //append occasions to body
   occasions.forEach((occ, index) => {
@@ -110,27 +92,4 @@ $("#submit-btn8").click(function () {
       alert("Something went wrong");
     },
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });

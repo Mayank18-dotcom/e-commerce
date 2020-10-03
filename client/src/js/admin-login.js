@@ -1,4 +1,21 @@
-$("#login-btn").on("click", function (event) {
+$.ajax({
+  url:
+    "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/admin/profile.php",
+  type: "GET",
+  xhrFields: {
+    withCredentials: true,
+  },
+  success: function (response, status, xhr) {
+    console.log("Admin is logged in");
+    window.location.href =
+      "https://testing1.thestrategybook.com/deepak-ecommerce/client/adminportal/index.html";
+  },
+  error: function (xhr, status) {
+    console.log("error", xhr, status);
+  },
+});
+
+$("#admin-login-btn").on("click", function (event) {
   event.preventDefault();
   var username = $("#username").val();
   var pass = $("#pass").val();
@@ -15,13 +32,8 @@ $("#login-btn").on("click", function (event) {
       data: JSON.stringify(body),
       success: function (response, status, xhr) {
         console.log(response);
-        // console.log(xhr.getAllResponseHeaders("set-cookie"));
-        // console.log(xhr.getResponseHeader());
-        // localStorage.setItem("isloggedin", "true");
-        // localStorage.setItem("role", "admin");
-        // location.replace(
-        //   "https://harshgoel05.github.io/deepak-ecommerce/client/adminportal.html"
-        // );
+        window.location.href =
+          "https://testing1.thestrategybook.com/deepak-ecommerce/client/adminportal/index.html";
       },
       error: function (xhr, status) {
         console.log("error", xhr, status);
@@ -32,43 +44,3 @@ $("#login-btn").on("click", function (event) {
     alert("Please enter all the details");
   }
 });
-// FrontDesk => Add client, Trainer ( employee, time)
-// Admin => All menus
-
-$("#logout-btn").click(function (e) {
-  e.preventDefault();
-  var url =
-    "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/logout.php";
-
-  $.ajax({
-    url: url,
-    type: "GET",
-    crossDomain: true,
-    success: function (response) {
-      // localStorage.removeItem("isloggedin", "true");
-      // localStorage.removeItem("role", "admin");
-      // location.replace(
-      //   "https://harshgoel05.github.io/deepak-ecommerce/client/admin-login.html"
-      // );
-    },
-    error: function (xhr, status) {
-      console.log("error", xhr, status);
-      alert("Some unknown error occured");
-    },
-  });
-});
-// Get user profile
-// $(document).on(function () {});
-// $.ajax({
-//   url:
-//     "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/admin/profile.php",
-//   type: "GET",
-//   xhrFields: {
-//     withCredentials: true,
-//   },
-//   success: function (response, status, xhr) {},
-//   error: function (xhr, status) {
-//     console.log("error", xhr, status);
-//     // alert("Some unknown error occured");
-//   },
-// });
