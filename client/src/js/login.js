@@ -56,7 +56,7 @@ $("#login-btn").on("click", function (event) {
  });
  
 //VALIDATION : 
-/*$(function() {
+$(function() {
 
     $("#username_error_message").hide();
     $("#pass_error_message").hide();
@@ -110,4 +110,4 @@ $("#login-btn").on("click", function (event) {
        }
 
     });
- });*/
+ });
