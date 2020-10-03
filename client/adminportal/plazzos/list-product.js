@@ -4,9 +4,10 @@ $(document).ready(function () {
       "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/plazzos/retrieve.php",
     type: "GET",
     success: function (response) {
-      response.data.forEach((product, index) => {
-        console.log(escape(product.title));
-        $("tbody").append(`
+      if (response.data) {
+        response.data.forEach((product, index) => {
+          console.log(escape(product.title));
+          $("tbody").append(`
                 <tr>
                 <th
                   scope="row"
@@ -30,32 +31,35 @@ $(document).ready(function () {
                 </td>
               </tr>      
                 `);
-      });
-      // delete api inside the success for previous api
-      $(".delete-btn").click(function () {
-        console.log("hi");
-        let productid = $(this).id;
-        console.log(productid);
-        $.ajax({
-          url:
-            "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/plazzos/remove.php",
-          type: "POST",
-          data: JSON.stringify({
-            productid: productid,
-          }),
-          xhrFields: {
-            withCredentials: true,
-          },
-          success: function (response, status, xhr) {
-            alert("Product Deleted");
-            window.location.reload()
-          },
-          error: function (xhr, status) {
-            console.log("error", xhr, status);
-            alert("Error deleting the product!");
-          },
         });
-      });
+        // delete api inside the success for previous api
+        $(".delete-btn").click(function () {
+          console.log("hi");
+          let productid = $(this).id;
+          console.log(productid);
+          $.ajax({
+            url:
+              "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/plazzos/remove.php",
+            type: "POST",
+            data: JSON.stringify({
+              productid: productid,
+            }),
+            xhrFields: {
+              withCredentials: true,
+            },
+            success: function (response, status, xhr) {
+              alert("Product Deleted");
+              window.location.reload();
+            },
+            error: function (xhr, status) {
+              console.log("error", xhr, status);
+              alert("Error deleting the product!");
+            },
+          });
+        });
+      } else {
+        alert("No Product found");
+      }
     },
     error: function (xhr, status) {
       console.log("error", xhr, status);

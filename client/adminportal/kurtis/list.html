@@ -1,174 +1,176 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Admin Portal Form</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../../src/css/style3.css">
+    <link rel="stylesheet" href="../../src/css/style3.css" />
     <link rel="stylesheet" href="../../src/css/adminportal.css" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
 
     <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div class="sidebar-header">
-                <h3>ADMIN</h3>
-                <h3>PORTAL</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="../dressMaterials/add.html">DRESS MATERIALS</a>
-                        </li>
-                        <li>
-                            <a href="../ghagra/add.html">GHAGRA</a>
-                        </li>
-                        <li>
-                            <a href="../kurtis/add.html">KURTIS</a>
-                        </li>
-                        <li>
-                            <a href="../leggings/add.html">LEGGINGS</a>
-                        </li>
-                        <li>
-                            <a href="../nightwear/add.html">NIGHTWEAR</a>
-                        </li>
-                        <li>
-                            <a href="../pants/add.html">PANTS</a>
-                        </li>
-                        <li>
-                            <a href="../plazzos/add.html">PLAZZOS</a>
-                        </li>
-                        <li>
-                            <a href="../readymadeBlouse/add.html">READY MADE BLOUSE</a>
-                        </li>
-                        <li>
-                            <a href="../readymadeDresses/add.html">READY MADE DRESSES</a>
-                        </li>
-                        <li>
-                            <a href="../sarees/add.html">SAREES</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="../dressMaterials/list.html">DRESS MATERIALS</a>
-                        </li>
-                        <li>
-                            <a href="../ghagra/list.html">GHAGRA</a>
-                        </li>
-                        <li>
-                            <a href="../kurtis/list.html">KURTIS</a>
-                        </li>
-                        <li>
-                            <a href="../leggings/list.html">LEGGINGS</a>
-                        </li>
-                        <li>
-                            <a href="../nightwear/list.html">NIGHTWEAR</a>
-                        </li>
-                        <li>
-                            <a href="../pants/list.html">PANTS</a>
-                        </li>
-                        <li>
-                            <a href="../plazzos/list.html">PLAZZOS</a>
-                        </li>
-                        <li>
-                            <a href="../readymadeBlouse/list.html">READY MADE BLOUSE</a>
-                        </li>
-                        <li>
-                            <a href="../readymadeDresses/list.html">READY MADE DRESSES</a>
-                        </li>
-                        <li>
-                            <a href="../sarees/list.html">SAREES</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../iam.html">IAM</a>
-                </li>
-                <li>
-                    <a class="logout-admin-btn" href="#">Logout</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Page Content  -->
-        <div  id="content">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                        <i class="fas fa-align-left"></i>
-                        <span>Menu</span>
-                    </button>
-                </div>
-            </nav>
-            <div class=" justify-content-center" style="margin-left: 200px;">
-                <div class="col-12 col-md-8 col-lg-8 col-xl-10 ">
-                    <h1 style="text-align: center;color: white;">KURTIS</h1>
-                    <br><br>
-                    <table class="table table-hover table-dark">
-                        <thead>
-                        <tr>
-                            <th scope="col">S NO.</th>
-                            <th scope="col">Product id</th>
-                            <th scope="col">Product title</th>
-                            <th scope="col">Subcategory</th>
-                            <th scope="col">Update</th>
-                            <th scope="col">Delete</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row" style="padding-bottom: 20px;padding-top: 20px;">1</th>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">Mark</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">Otto</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">@mdo</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;"><button type="button" class="btn btn-primary">Update</button></td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;"><button type="button" class="btn btn-danger">Delete</button></td>
-                            </tr>
-                            <tr>
-                            <th scope="row" style="padding-bottom: 20px;padding-top: 20px;">2</th>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">Mark</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">Otto</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">@mdo</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;"><button type="button" class="btn btn-primary">Update</button></td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;"><button type="button" class="btn btn-danger">Delete</button></td>
-                            </tr>
-                            <tr>
-                            <th scope="row" style="padding-bottom: 20px;padding-top: 20px;">3</th>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">Mark</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">Otto</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;">@mdo</td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;"><button type="button" class="btn btn-primary">Update</button></td>
-                            <td style="padding-bottom: 20px;padding-top: 20px;"><button type="button" class="btn btn-danger">Delete</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div id="dismiss">
+          <i class="fas fa-arrow-left"></i>
         </div>
+
+        <div class="sidebar-header">
+          <h3>ADMIN</h3>
+          <h3>PORTAL</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+              >Product Upload<i
+                class="fa fa-caret-down"
+                style="margin-left: 10px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="../dressMaterials/add.html">DRESS MATERIALS</a>
+              </li>
+              <li>
+                <a href="../ghagra/add.html">GHAGRA</a>
+              </li>
+              <li>
+                <a href="../kurtis/add.html">KURTIS</a>
+              </li>
+              <li>
+                <a href="../leggings/add.html">LEGGINGS</a>
+              </li>
+              <li>
+                <a href="../nightwear/add.html">NIGHTWEAR</a>
+              </li>
+              <li>
+                <a href="../pants/add.html">PANTS</a>
+              </li>
+              <li>
+                <a href="../plazzos/add.html">PLAZZOS</a>
+              </li>
+              <li>
+                <a href="../readymadeBlouse/add.html">READY MADE BLOUSE</a>
+              </li>
+              <li>
+                <a href="../readymadeDresses/add.html">READY MADE DRESSES</a>
+              </li>
+              <li>
+                <a href="../sarees/add.html">SAREES</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+              >Product List<i
+                class="fa fa-caret-down"
+                style="margin-left: 10px"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="../dressMaterials/list.html">DRESS MATERIALS</a>
+              </li>
+              <li>
+                <a href="../ghagra/list.html">GHAGRA</a>
+              </li>
+              <li>
+                <a href="../kurtis/list.html">KURTIS</a>
+              </li>
+              <li>
+                <a href="../leggings/list.html">LEGGINGS</a>
+              </li>
+              <li>
+                <a href="../nightwear/list.html">NIGHTWEAR</a>
+              </li>
+              <li>
+                <a href="../pants/list.html">PANTS</a>
+              </li>
+              <li>
+                <a href="../plazzos/list.html">PLAZZOS</a>
+              </li>
+              <li>
+                <a href="../readymadeBlouse/list.html">READY MADE BLOUSE</a>
+              </li>
+              <li>
+                <a href="../readymadeDresses/list.html">READY MADE DRESSES</a>
+              </li>
+              <li>
+                <a href="../sarees/list.html">SAREES</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../iam.html">IAM</a>
+          </li>
+          <li>
+            <a class="logout-admin-btn" href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-dark">
+              <i class="fas fa-align-left"></i>
+              <span>Menu</span>
+            </button>
+          </div>
+        </nav>
+        <div class="justify-content-center" style="margin-left: 200px">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-10">
+            <h1 style="text-align: center; color: white">KURTIS</h1>
+            <br /><br />
+            <table class="table table-hover table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">S NO.</th>
+                  <th scope="col">Product id</th>
+                  <th scope="col">Product title</th>
+                  <th scope="col">Update</th>
+                  <th scope="col">Delete</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="overlay"></div>
@@ -190,8 +192,8 @@
     ></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="./add-product.js"></script>
+    <script src="../../src/js/admin-sidebar.js"></script>
+    <script type="text/javascript" src="./list-product.js"></script>
     <script src="../../src/js/check-admin-login.js"></script>
-</body>
-
+  </body>
 </html>

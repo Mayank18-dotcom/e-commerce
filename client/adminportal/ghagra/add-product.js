@@ -1,20 +1,3 @@
-$(document).ready(function () {
-  $("#sidebar").mCustomScrollbar({
-      theme: "minimal"
-  });
-
-  $('#dismiss, .overlay').on('click', function () {
-      $('#sidebar').removeClass('active');
-      $('.overlay').removeClass('active');
-  });
-
-  $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').addClass('active');
-      $('.overlay').addClass('active');
-      $('.collapse.in').toggleClass('in');
-      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-  });
-});
 $("#submit-btn1").click(function () {
   console.log("Call add product API");
   let id = $("#id1").val();
@@ -26,7 +9,6 @@ $("#submit-btn1").click(function () {
   let type = $("#type1").val();
   let fab = $("#faab1").val();
 
-
   var sizes = [];
   $("#size-container1 input:checked").each(function () {
     sizes.push(this.value);
@@ -37,7 +19,6 @@ $("#submit-btn1").click(function () {
     occasions.push(this.value);
   });
   console.log("occ", occasions);
-
 
   var washcares = [];
   $("#washcare-cont1 input:checked").each(function () {
@@ -56,16 +37,16 @@ $("#submit-btn1").click(function () {
     // image4
     // image5
     // image6
-    description:description,
+    description: description,
     type: type,
-    fabric:fab,
+    fabric: fab,
     // washcare1
     // washcare2
     // washcare3
   };
 
-   //append occasions to body
-   occasions.forEach((occ, index) => {
+  //append occasions to body
+  occasions.forEach((occ, index) => {
     finalbody[`occasion${index + 1}`] = occ;
   });
   //append size to body
@@ -77,7 +58,6 @@ $("#submit-btn1").click(function () {
     finalbody[`washcare${index + 1}`] = washcare;
   });
   console.log(finalbody);
-
 
   $.ajax({
     url:
@@ -92,7 +72,4 @@ $("#submit-btn1").click(function () {
       alert("Something went wrong");
     },
   });
-
-
-
 });

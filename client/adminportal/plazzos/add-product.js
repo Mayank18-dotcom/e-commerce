@@ -1,20 +1,3 @@
-$(document).ready(function () {
-  $("#sidebar").mCustomScrollbar({
-      theme: "minimal"
-  });
-
-  $('#dismiss, .overlay').on('click', function () {
-      $('#sidebar').removeClass('active');
-      $('.overlay').removeClass('active');
-  });
-
-  $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').addClass('active');
-      $('.overlay').addClass('active');
-      $('.collapse.in').toggleClass('in');
-      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-  });
-});
 $("#submit-btn").click(function () {
   console.log("Call add product API");
   let id = $("#id7").val();
@@ -22,28 +5,28 @@ $("#submit-btn").click(function () {
   let sub_title = $("#sub_title7").val();
   let price = $("#price7").val();
   let description = $("#des7").val();
-  let type= $("#type7").val();
-  let length= $("#lenght7").val();
-  let pattern= $("#pattern7").val();
-  let material= $("#mat7").val();
+  let type = $("#type7").val();
+  let length = $("#lenght7").val();
+  let pattern = $("#pattern7").val();
+  let material = $("#mat7").val();
 
-   // For sizes
-   var sizes = [];
-   $("#size-container7 input:checked").each(function () {
-     sizes.push(this.value);
-   });
-   // For occasions
-   var occasions = [];
-   $("#occasion-cont7 input:checked").each(function () {
-     occasions.push(this.value);
-   });
-   console.log("occ", occasions);
-   var washcares = [];
-   $("#washcare-cont7 input:checked").each(function () {
-     washcares.push(this.value);
-   });
+  // For sizes
+  var sizes = [];
+  $("#size-container7 input:checked").each(function () {
+    sizes.push(this.value);
+  });
+  // For occasions
+  var occasions = [];
+  $("#occasion-cont7 input:checked").each(function () {
+    occasions.push(this.value);
+  });
+  console.log("occ", occasions);
+  var washcares = [];
+  $("#washcare-cont7 input:checked").each(function () {
+    washcares.push(this.value);
+  });
 
-   var finalbody = {
+  var finalbody = {
     productid: id,
     title: title,
     subtitle: sub_title,
@@ -55,11 +38,11 @@ $("#submit-btn").click(function () {
     // image4
     // image5
     // image6
-    description:description,
+    description: description,
     type: type,
-    length:length,
-    pattern:pattern,
-    material:material
+    length: length,
+    pattern: pattern,
+    material: material,
     // washcare1
     // washcare2
     // washcare3
@@ -91,10 +74,4 @@ $("#submit-btn").click(function () {
       alert("Something went wrong");
     },
   });
-
-
-
-
-
-
 });

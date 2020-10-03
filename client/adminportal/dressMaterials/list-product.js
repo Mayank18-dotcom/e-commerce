@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  await $.ajax({
+  $.ajax({
     url:
       "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/dressMaterials/retrieve.php",
     type: "GET",
@@ -38,7 +38,7 @@ $(document).ready(function () {
         console.log(productid);
         $.ajax({
           url:
-            "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/dressMaterial/remove.php",
+            "https://testing1.thestrategybook.com/deepak-ecommerce/server/api/products/dressMaterials/remove.php",
           type: "POST",
           data: JSON.stringify({
             productid: productid,
@@ -48,7 +48,7 @@ $(document).ready(function () {
           },
           success: function (response, status, xhr) {
             alert("Product Deleted");
-            window.location.reload()
+            window.location.reload();
           },
           error: function (xhr, status) {
             console.log("error", xhr, status);
