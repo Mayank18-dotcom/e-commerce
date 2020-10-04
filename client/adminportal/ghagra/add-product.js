@@ -4,6 +4,7 @@ $("#submit-btn1").click(function () {
   let title = $("#title1").val();
   let sub_title = $("#sub_title1").val();
   let price = $("#price1").val();
+  let quant = $("#quant1").val();
   // let sub_cat = $("#sub-cat1").val();
   let description = $("#des1").val();
   let type = $("#type1").val();
@@ -30,6 +31,7 @@ $("#submit-btn1").click(function () {
     title: title,
     subtitle: sub_title,
     price: price,
+    quantity : quant,
     // colors
     // image1
     // image2

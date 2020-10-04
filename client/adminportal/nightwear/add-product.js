@@ -4,7 +4,7 @@ $("#add-product").click(function () {
   let title = $("#title").val();
   let sub_title = $("#sub_title").val();
   let price = $("#price").val();
-
+  let quant = $("#quant").val();
   let kurtafabric = $("#kurta_fabric").val();
   let bottomfabric = $("#bottom_fabric").val();
   let dupattafabric = $("#dupatta_fabric").val();
@@ -34,6 +34,7 @@ $("#add-product").click(function () {
     title: title,
     subtitle: sub_title,
     price: price,
+    quantity : quant,
     // colors
     // image1
     // image2
@@ -91,6 +92,7 @@ $("#submit-btn3").click(function () {
   let title = $("#title3").val();
   let sub_title = $("#sub_title3").val();
   let price = $("#price3").val();
+  let quant = $("#quant3").val();
   let description = $("#des3").val();
   let type= $("#type3").val();
   let fabric= $("#faab3").val();
@@ -112,6 +114,7 @@ $("#submit-btn3").click(function () {
     title: title,
     subtitle: sub_title,
     price: price,
+    quantity : quant,
     // colors
     // image1
     // image2

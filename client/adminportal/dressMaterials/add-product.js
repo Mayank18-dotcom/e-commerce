@@ -4,7 +4,7 @@ $("#add-product").click(function () {
   let title = $("#title").val();
   let sub_title = $("#sub_title").val();
   let price = $("#price").val();
-
+  let quant = $("#quant").val();
   let kurtafabric = $("#kurta_fabric").val();
   let bottomfabric = $("#bottom_fabric").val();
   let dupattafabric = $("#dupatta_fabric").val();
@@ -34,6 +34,7 @@ $("#add-product").click(function () {
     title: title,
     subtitle: sub_title,
     price: price,
+    quantity : quant,
     // colors
     // image1
     // image2
