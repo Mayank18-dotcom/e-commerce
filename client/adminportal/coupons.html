@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../src/css/style3.css" />
+    <link rel="stylesheet" href="../src/css/coupons.css" />
+    <link rel="stylesheet" href="../src/css/commom.css" />
+  </head>
+  <body class="bg-light">
+    <!--NAVBAR-->
+    <nav id="sidebar">
+      <div id="dismiss">
+          <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <div class="sidebar-header">
+          <h3>ADMIN</h3>
+          <h3>PORTAL</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+          <li>
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                      <a href="./dressMaterials/add.html">DRESS MATERIALS</a>
+                  </li>
+                  <li>
+                      <a href="./ghagra/add.html">GHAGRA</a>
+                  </li>
+                  <li>
+                      <a href="./kurtis/add.html">KURTIS</a>
+                  </li>
+                  <li>
+                      <a href="./leggings/add.html">LEGGINGS</a>
+                  </li>
+                  <li>
+                      <a href="./nightwear/add.html">NIGHTWEAR</a>
+                  </li>
+                  <li>
+                      <a href="./pants/add.html">PANTS</a>
+                  </li>
+                  <li>
+                      <a href="./plazzos/add.html">PLAZZOS</a>
+                  </li>
+                  <li>
+                      <a href="./readymadeBlouse/add.html">READY MADE BLOUSE</a>
+                  </li>
+                  <li>
+                      <a href="./readymadeDresses/add.html">READY MADE DRESSES</a>
+                  </li>
+                  <li>
+                      <a href="./sarees/add.html">SAREES</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                      <a href="./dressMaterials/list.html">DRESS MATERIALS</a>
+                  </li>
+                  <li>
+                      <a href="./ghagra/list.html">GHAGRA</a>
+                  </li>
+                  <li>
+                      <a href="./kurtis/list.html">KURTIS</a>
+                  </li>
+                  <li>
+                      <a href="./leggings/list.html">LEGGINGS</a>
+                  </li>
+                  <li>
+                      <a href="./nightwear/list.html">NIGHTWEAR</a>
+                  </li>
+                  <li>
+                      <a href="./pants/list.html">PANTS</a>
+                  </li>
+                  <li>
+                      <a href="./plazzos/list.html">PLAZZOS</a>
+                  </li>
+                  <li>
+                      <a href="./readymadeBlouse/list.html">READY MADE BLOUSE</a>
+                  </li>
+                  <li>
+                      <a href="./readymadeDresses/list.html">READY MADE DRESSES</a>
+                  </li>
+                  <li>
+                      <a href="./sarees/list.html">SAREES</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <a href="./iam.html">IAM</a>
+          </li>
+          <li>
+              <a class="logout-admin-btn" href="#">Logout</a>
+          </li>
+      </ul>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-dark">
+              <i class="fas fa-align-left"></i>
+              <span>Menu</span>
+          </button>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+    <div class="login-content">
+      <form id="login-form">
+        <h2 class="title">Add Coupons</h2>
+        <div class="input-div one">
+          <div class="i">
+            <!-- <i class="fa fa-user" style="color: gray"></i> -->
+          </div>
+          <div class="div">
+            <h5>Coupon Code</h5>
+            <input type="text" class="input" id="coupon_code" />
+          </div>
+        </div>
+        <span class="error_form" id="coupon_code_error_message"></span>
+        <div class="input-div">
+          <div class="i">
+            <!-- <i class="fa fa-user" style="color: gray"></i> -->
+          </div>
+          <div class="div">
+            <h5>MInimum Cart Amount</h5>
+            <input type="text" class="input" id="min_cart_amt" />
+          </div>
+        </div>
+        <span class="error_form" id="min_cart_amt_error_message"></span>
+        <div class="input-div">
+          <div class="i">
+            <!-- <i class="fa fa-user" style="color: gray"></i> -->
+          </div>
+          <div class="div">
+            <h5>Type</h5>
+            <input type="text" class="input" id="type" />
+          </div>
+        </div>
+        <span class="error_form" id="type_error_message"></span>
+        <div class="input-div">
+          <div class="i">
+            <!-- <i class="fa fa-user" style="color: gray"></i> -->
+          </div>
+          <div class="div">
+            <h5>Maximum Discount</h5>
+            <input type="text" class="input" id="max_dist" />
+          </div>
+        </div>
+        <span class="error_form" id="max_dist_error_message"></span>
+        <br />
+        <input
+          type="button"
+          class="btn btn1"
+          value="ADD"
+          id="admin-login-btn"
+        />
+      </form>
+    </div>
+    <br /><br /><br /><br />
+    <!-- FOOTER START -->
+    <div class="footer"></div>
+
+    <!-- END OF FOOTER -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../src/js/admin-sidebar.js"></script>
+    <script src="../src/js/form.js"></script>
+    <script src="../src/js/common.js"></script>
+    <script src="../src/js/admin-login.js"></script>
+  </body>
+</html>
