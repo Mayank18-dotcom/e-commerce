@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  background-color: rgb(164, 52, 147);
+  background-image: url('../img/index.jpg');
+  background-size: cover;
 }
 
 /*HEADER*/
 .header {
-  background-color: rgb(164, 52, 147);
   padding: 100px;
 }
 
@@ -67,7 +67,18 @@ body {
 .header__title {
   color: #fafafa;
   font-family: "Roboto", sans-serif;
-  font-size: 112px;
+  font-size: 100px;
+  text-align: center;
+  line-height: 1.2;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__title1 {
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
   text-align: center;
   line-height: 1.2;
   height: 25vh;
