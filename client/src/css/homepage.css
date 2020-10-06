@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background-color: rgb(164, 52, 147);
+}
+
+/*HEADER*/
+.header {
+  background-color: rgb(164, 52, 147);
+  padding: 100px;
+}
+
+/*...Nav..*/
+.header__nav {
+  max-width: 1000px;
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav__logo {
+  width: 72px;
+  height: auto;
+  opacity: 0;
+}
+
+.header__nav__linkCont {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__nav__link {
+  font-family: "Roboto", sans-serif;
+}
+.header__nav__link a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
+.header__nav__link:hover{
+  text-decoration: underline;
+}
+.header__nav__item__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__nav__sociallink {
+  color: white;
+  font-size: 8px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.header__title {
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+  font-size: 112px;
+  text-align: center;
+  line-height: 1.2;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*BELLY*/
+.belly {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.belly__item {
+  width: calc(50% - 64px);
+  margin: 16px;
+  padding: 40px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.belly__item {
+  background: #A9C12D;
+}
+
+.belly__item:nth-of-type(3n+1), .belly__item:nth-of-type(4n+1) {
+  background: #FF6E6E;
+}
+
+.belly__item__img {
+  width: 152px;
+  height: auto;
+}
+
+.belly__item__text {
+  color: #fafafa;
+  margin: 0 4px;
+}
+
+.belly__item__tile {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.belly__item__subtitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 100;
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+.belly__item__p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .header__nav__logo {
+    opacity: 1;
+  }
+
+  .belly {
+    flex-direction: column;
+  }
+
+  .belly__item {
+    width: calc(100% - 64px);
+  }
+
+  .belly__item:nth-of-type(odd) {
+    background: #FF6E6E;
+  }
+
+  .belly__item:nth-of-type(even) {
+    background: #A9C12D;
+  }
+}
+@media screen and (max-width: 450px) {
+  .belly__item {
+    flex-direction: column;
+  }
+
+  .belly__item__img {
+    width: 200px;
+    margin: 0 0 32px;
+  }
+}

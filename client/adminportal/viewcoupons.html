@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Admin Portal Form</title>
+    <title>Admin Portal List</title>
 
     <!-- Bootstrap CSS CDN -->
     <link
@@ -15,9 +15,8 @@
       crossorigin="anonymous"
     />
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="../../src/css/commom.css" />
-    <link rel="stylesheet" href="../../src/css/style3.css" />
-    <link rel="stylesheet" href="../../src/css/adminportal.css" />
+    <link rel="stylesheet" href="../src/css/style3.css" />
+    <link rel="stylesheet" href="../src/css/adminportal.css" />
     <!-- Scrollbar Custom CSS -->
     <link
       rel="stylesheet"
@@ -63,34 +62,34 @@
             ></a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
               <li>
-                <a href="../dressMaterials/add.html">DRESS MATERIALS</a>
+                <a href="./dressMaterials/add.html">DRESS MATERIALS</a>
               </li>
               <li>
-                <a href="../ghagra/add.html">GHAGRA</a>
+                <a href="./ghagra/add.html">GHAGRA</a>
               </li>
               <li>
-                <a href="../kurtis/add.html">KURTIS</a>
+                <a href="./kurtis/add.html">KURTIS</a>
               </li>
               <li>
-                <a href="../leggings/add.html">LEGGINGS</a>
+                <a href="./leggings/add.html">LEGGINGS</a>
               </li>
               <li>
-                <a href="../nightwear/add.html">NIGHTWEAR</a>
+                <a href="./nightwear/add.html">NIGHTWEAR</a>
               </li>
               <li>
-                <a href="../pants/add.html">PANTS</a>
+                <a href="./pants/add.html">PANTS</a>
               </li>
               <li>
-                <a href="../plazzos/add.html">PLAZZOS</a>
+                <a href="./plazzos/add.html">PLAZZOS</a>
               </li>
               <li>
-                <a href="../readymadeBlouse/add.html">READY MADE BLOUSE</a>
+                <a href="./readymadeBlouse/add.html">READY MADE BLOUSE</a>
               </li>
               <li>
-                <a href="../readymadeDresses/add.html">READY MADE DRESSES</a>
+                <a href="./readymadeDresses/add.html">READY MADE DRESSES</a>
               </li>
               <li>
-                <a href="../sarees/add.html">SAREES</a>
+                <a href="./sarees/add.html">SAREES</a>
               </li>
             </ul>
           </li>
@@ -104,48 +103,48 @@
             ></a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
               <li>
-                <a href="../dressMaterials/list.html">DRESS MATERIALS</a>
+                <a href="./dressMaterials/list.html">DRESS MATERIALS</a>
               </li>
               <li>
-                <a href="../ghagra/list.html">GHAGRA</a>
+                <a href="./ghagra/list.html">GHAGRA</a>
               </li>
               <li>
-                <a href="../kurtis/list.html">KURTIS</a>
+                <a href="./kurtis/list.html">KURTIS</a>
               </li>
               <li>
-                <a href="../leggings/list.html">LEGGINGS</a>
+                <a href="./leggings/list.html">LEGGINGS</a>
               </li>
               <li>
-                <a href="../nightwear/list.html">NIGHTWEAR</a>
+                <a href="./nightwear/list.html">NIGHTWEAR</a>
               </li>
               <li>
-                <a href="../pants/list.html">PANTS</a>
+                <a href="./pants/list.html">PANTS</a>
               </li>
               <li>
-                <a href="../plazzos/list.html">PLAZZOS</a>
+                <a href="./plazzos/list.html">PLAZZOS</a>
               </li>
               <li>
-                <a href="../readymadeBlouse/list.html">READY MADE BLOUSE</a>
+                <a href="./readymadeBlouse/list.html">READY MADE BLOUSE</a>
               </li>
               <li>
-                <a href="../readymadeDresses/list.html">READY MADE DRESSES</a>
+                <a href="./readymadeDresses/list.html">READY MADE DRESSES</a>
               </li>
               <li>
-                <a href="../sarees/list.html">SAREES</a>
+                <a href="./sarees/list.html">SAREES</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="../iam.html">IAM</a>
+            <a href="./iam.html">IAM</a>
           </li>
           <li>
-            <a href="../vieworders.html">View Orders</a>
+            <a href="./vieworders.html">View Orders</a>
           </li>
           <li>
-            <a href="../addcoupons.html">Add Coupons</a>
+            <a href="./addcoupons.html">Add Coupons</a>
           </li>
           <li>
-            <a href="../viewcoupons.html">View Coupons</a>
+            <a href="./viewcoupons.html">View Coupons</a>
           </li>
           <li>
             <a class="logout-admin-btn" href="#">Logout</a>
@@ -164,26 +163,48 @@
         </nav>
         <div class="justify-content-center" style="margin-left: 200px">
           <div class="col-12 col-md-8 col-lg-8 col-xl-10">
-            <h1 style="text-align: center; color: white">LEGGINGS</h1>
+            <h1 style="text-align: center; color: white">DRESS MATERIALS</h1>
             <br /><br />
             <table class="table table-hover table-dark">
               <thead>
                 <tr>
                   <th scope="col">S NO.</th>
-                  <th scope="col">Product id</th>
-                  <th scope="col">Product title</th>
-                  <th scope="col">Update</th>
+                  <th scope="col">Coupon Code</th>
+                  <th scope="col">Minimum Cart Amount</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Maximum Discount</th>
                   <th scope="col">Delete</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                <th scope="row">3</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td><button type="button" class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
             </table>
           </div>
         </div>
-        <br><br><br><br>
-        <!-- FOOTER START -->
-        <div class="footer"></div>
-        <!-- END OF FOOTER -->
       </div>
     </div>
 
@@ -206,9 +227,8 @@
     ></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="../../src/js/admin-sidebar.js"></script>
-    <script src="../../src/js/common.js"></script>
+    <script src="../src/js/admin-sidebar.js"></script>
     <script type="text/javascript" src="./list-product.js"></script>
-    <script src="../../src/js/check-admin-login.js"></script>
+    <!-- <script src="../../src/js/check-admin-login.js"></script> -->
   </body>
 </html>

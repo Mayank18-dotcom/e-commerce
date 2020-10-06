@@ -18,84 +18,82 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"
-          ><img class="imgnav" src="../src/img/sds1.jpg"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#"
+      ><img class="imgnav" src="../src/img/sds1.jpg"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html"
+            >HOME <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+            >ABOUT US <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+            >TESTIMONIALS <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./contact.html"
+            >CONTACT US <span class="sr-only">(current)</span></a
+          >
+        </li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0 searchit">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search Product"
+          aria-label="Search"
+        />
+      </form>
+      <button class="btn my-2 my-sm-0" type="submit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+      <div class="form-inline my-2 my-lg-0 nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
           aria-expanded="false"
-          aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html"
-                >HOME <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >ABOUT US <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >TESTIMONIALS <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./contact.html"
-                >CONTACT US <span class="sr-only">(current)</span></a
-              >
-            </li>
-          </ul>
-  
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search Product"
-              aria-label="Search"
-            />
-            <button class="btn my-2 my-sm-0" type="submit">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </form>
-          <div class="form-inline my-2 my-lg-0 nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="fa fa-user" aria-hidden="true"></i>
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">WELCOME</a>
-              <a class="dropdown-item" href="./sign.html">Signup</a>
-              <a class="dropdown-item" href="./login.html">Login</a>
-              <a class="dropdown-item" href="./cart.html">My cart</a>
-              <a class="dropdown-item" href="./wishlist.html">My wish list</a>
-            <a href="#" class="dropdown-item logout-user-btn">Logout</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">WELCOME</a>
+          <a class="dropdown-item" href="./sign.html">Signup</a>
+          <a class="dropdown-item" href="./login.html">Login</a>
+          <a class="dropdown-item" href="./cart.html">My cart</a>
+          <a class="dropdown-item" href="./wishlist.html">My wish list</a>
+          <a href="#" class="dropdown-item logout-user-btn">Logout</a>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
       <br />
 
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-body">
           <h2 class="card-title" style="text-align: center;">Checkout</h2>
           <h5 class="card-subtitle mb-2 text-muted">Details : </h5>
@@ -137,33 +135,92 @@
           </div>
           <a href="#" class="card-link" id="chadd">Change Address</a>
         </div>
-      </div>
-      <br><br>
-      <div class="card" id="change-add">
-        <div class="card-body">
-          <h2 class="card-title" style="text-align: center;">Change address</h2>
-          
-          <form>
-            <div class="form-group">
-              <label for="state">State</label>
-              <input type="text" class="form-control" id="state" placeholder="Enter state">
+      </div> -->
+      <div class="login-content">
+        <form id="registration_form" action="" method="POST">
+          <h2 class="title">Checkout</h2>
+          <div class="row">
+            <div class="col">
+              <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-user" style="color: gray"></i>
+                </div>
+                <div class="div">
+                  <h5>Username</h5>
+                  <input type="text" class="input" id="name" />
+                </div>
+              </div>
+              <span class="error_form" id="name_error_message"></span>
+              <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-map-marker" style="color: gray"></i>
+                </div>
+                <div class="div">
+                  <h5>State</h5>
+                  <input type="text" class="input" id="state" />
+                </div>
+              </div>
+              <span class="error_form" id="state_error_message"></span>
+              <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-map-marker" style="color: gray"></i>
+                </div>
+                <div class="div">
+                  <h5>Location</h5>
+                  <textarea type="text" class="input" id="address"></textarea>
+                </div>
+              </div>
+              <span class="error_form" id="address_error_message"></span>
             </div>
-            <div class="form-group">
-                <label for="city">City</label>
-                <input type="text" class="form-control" id="city" placeholder="Enter city">
+            <div class="col">
+              <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-envelope" style="color: gray"></i>
+                </div>
+                <div class="div">
+                  <h5>Email</h5>
+                  <input type="email" class="input" id="email" />
+                </div>
               </div>
-              <div class="form-group">
-                <label for="add">Credentials</label>
-                <input type="text" class="form-control" id="add" placeholder="Enter credentials">
+              <span class="error_form" id="email_error_message"></span>
+              <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-map-marker" style="color: gray"></i>
+                </div>
+                <div class="div">
+                  <h5>City</h5>
+                  <input type="text" class="input" id="city" />
+                </div>
               </div>
-              <div class="form-group">
-                <label for="pin">Pin code</label>
-                <input type="text" class="form-control" id="pin" aria-describedby="emailHelp" placeholder="Enter PIN">
+              <span class="error_form" id="city_error_message"></span>
+  
+              <div class="input-div">
+                <div class="i">
+                  <i class="fa fa-map-marker" style="color: gray"></i>
+                </div>
+                <div class="div">
+                  <h5>PIN</h5>
+                  <input type="text" class="input" id="pincode" />
+                </div>
               </div>
-            <button type="submit" class="btn btn-primary" id="chadd1">Change</button>
-          </form>
-        </div>
+              <span class="error_form" id="pincode_error_message"></span>
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="i">
+              <i class="fa fa-phone" style="color: gray"></i>
+            </div>
+            <div class="div">
+              <h5>Phone Number</h5>
+              <input type="text" class="input" id="phone_number" />
+            </div>
+          </div>
+          <span class="error_form" id="phone_number_error_message"></span>
+          <br />
+          <input type="submit" class="btn btn1" value="Proceed to pay" id="submit-btn" />
+        </form>
       </div>
+      
       <br><br>
     <!-- FOOTER START -->
     <div class="footer"></div>
@@ -186,7 +243,5 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="../src/js/home.js"></script>
-    <script src="../src/js/checkout.js"></script>
 </body>
 </html>

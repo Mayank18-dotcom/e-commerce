@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Admin Portal Form</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../src/css/style3.css" />
+    <link rel="stylesheet" href="../src/css/commom.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="./src/js/iam.js"></script>
+</head>
+
+<body">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>ADMIN</h3>
+                <h3>PORTAL</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="./dressMaterials/add.html">DRESS MATERIALS</a>
+                        </li>
+                        <li>
+                            <a href="./ghagra/add.html">GHAGRA</a>
+                        </li>
+                        <li>
+                            <a href="./kurtis/add.html">KURTIS</a>
+                        </li>
+                        <li>
+                            <a href="./leggings/add.html">LEGGINGS</a>
+                        </li>
+                        <li>
+                            <a href="./nightwear/add.html">NIGHTWEAR</a>
+                        </li>
+                        <li>
+                            <a href="./pants/add.html">PANTS</a>
+                        </li>
+                        <li>
+                            <a href="./plazzos/add.html">PLAZZOS</a>
+                        </li>
+                        <li>
+                            <a href="./readymadeBlouse/add.html">READY MADE BLOUSE</a>
+                        </li>
+                        <li>
+                            <a href="./readymadeDresses/add.html">READY MADE DRESSES</a>
+                        </li>
+                        <li>
+                            <a href="./sarees/add.html">SAREES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="./dressMaterials/list.html">DRESS MATERIALS</a>
+                        </li>
+                        <li>
+                            <a href="./ghagra/list.html">GHAGRA</a>
+                        </li>
+                        <li>
+                            <a href="./kurtis/list.html">KURTIS</a>
+                        </li>
+                        <li>
+                            <a href="./leggings/list.html">LEGGINGS</a>
+                        </li>
+                        <li>
+                            <a href="./nightwear/list.html">NIGHTWEAR</a>
+                        </li>
+                        <li>
+                            <a href="./pants/list.html">PANTS</a>
+                        </li>
+                        <li>
+                            <a href="./plazzos/list.html">PLAZZOS</a>
+                        </li>
+                        <li>
+                            <a href="./readymadeBlouse/list.html">READY MADE BLOUSE</a>
+                        </li>
+                        <li>
+                            <a href="./readymadeDresses/list.html">READY MADE DRESSES</a>
+                        </li>
+                        <li>
+                            <a href="./sarees/list.html">SAREES</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./iam.html">IAM</a>
+                </li>
+                <li>
+                    <a href="./vieworders.html">View Orders</a>
+                </li>
+                <li>
+                    <a href="./addcoupons.html">Add Coupons</a>
+                  </li>
+                  <li>
+                    <a href="./viewcoupons.html">View Coupons</a>
+                  </li>
+                <li>
+                    <a class="logout-admin-btn" href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div  id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </nav>
+            <br><br>
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Product Category</th>
+                        <th>Sub-Category (if-any)</th>
+                        <th>Coupon Code</th>
+                        <th>Max. Discount</th>
+                        <th>Price(after discount)</th>
+                        <th>Order date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Yo sarees</td>
+                        <td>One-size</td>
+                        <td>Red</td>
+                        <td>sarees</td>
+                        <td>Paithani Sarees</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>Rs. 3,800</td>
+                        <td>31/12.2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Patiala</td>
+                        <td>XL</td>
+                        <td>Yellow</td>
+                        <td>Readymade Dresses</td>
+                        <td>Patiala</td>
+                        <td>XYZ</td>
+                        <td>Rs. 100</td>
+                        <td>Rs. 1,200</td>
+                        <td>30/12.2020</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ghagra Blue</td>
+                        <td>X</td>
+                        <td>Blue</td>
+                        <td>Ghagra</td>
+                        <td>Bridal</td>
+                        <td>ABC</td>
+                        <td>Rs. 150</td>
+                        <td>Rs. 2,000</td>
+                        <td>31/12/2020</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Leggings abcd</td>
+                        <td>L</td>
+                        <td>Green</td>
+                        <td>Leggings</td>
+                        <td>Ankle length</td>
+                        <td>POIU</td>
+                        <td>RS. 200</td>
+                        <td>Rs. 800</td>
+                        <td>30/12/2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nightwear black</td>
+                        <td>M</td>
+                        <td>Black</td>
+                        <td>Nightwear</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>Rs. 3,800</td>
+                        <td>31/12/2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Yo sarees</td>
+                        <td>One-size</td>
+                        <td>Red</td>
+                        <td>sarees</td>
+                        <td>Paithani Sarees</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>Rs. 3,800</td>
+                        <td>31/12.2020</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Patiala</td>
+                        <td>XL</td>
+                        <td>Yellow</td>
+                        <td>Readymade Dresses</td>
+                        <td>Patiala</td>
+                        <td>XYZ</td>
+                        <td>Rs. 100</td>
+                        <td>Rs. 1,200</td>
+                        <td>30/12.2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Ghagra Blue</td>
+                        <td>X</td>
+                        <td>Blue</td>
+                        <td>Ghagra</td>
+                        <td>Bridal</td>
+                        <td>ABC</td>
+                        <td>Rs. 150</td>
+                        <td>Rs. 2,000</td>
+                        <td>31/12/2020</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Leggings abcd</td>
+                        <td>L</td>
+                        <td>Green</td>
+                        <td>Leggings</td>
+                        <td>Ankle length</td>
+                        <td>POIU</td>
+                        <td>RS. 200</td>
+                        <td>Rs. 800</td>
+                        <td>30/12/2020</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Nightwear black</td>
+                        <td>M</td>
+                        <td>Black</td>
+                        <td>Nightwear</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>Rs. 3,800</td>
+                        <td>31/12/2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Yo sarees</td>
+                        <td>One-size</td>
+                        <td>Red</td>
+                        <td>sarees</td>
+                        <td>Paithani Sarees</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>Rs. 3,800</td>
+                        <td>31/12.2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Patiala</td>
+                        <td>XL</td>
+                        <td>Yellow</td>
+                        <td>Readymade Dresses</td>
+                        <td>Patiala</td>
+                        <td>XYZ</td>
+                        <td>Rs. 100</td>
+                        <td>Rs. 1,200</td>
+                        <td>30/12.2020</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Ghagra Blue</td>
+                        <td>X</td>
+                        <td>Blue</td>
+                        <td>Ghagra</td>
+                        <td>Bridal</td>
+                        <td>ABC</td>
+                        <td>Rs. 150</td>
+                        <td>Rs. 2,000</td>
+                        <td>31/12/2020</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Leggings abcd</td>
+                        <td>L</td>
+                        <td>Green</td>
+                        <td>Leggings</td>
+                        <td>Ankle length</td>
+                        <td>POIU</td>
+                        <td>RS. 200</td>
+                        <td>Rs. 800</td>
+                        <td>30/12/2020</td>
+                        <td>Ordered</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Nightwear black</td>
+                        <td>M</td>
+                        <td>Black</td>
+                        <td>Nightwear</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>NIL</td>
+                        <td>Rs. 3,800</td>
+                        <td>31/12/2020</td>
+                        <td>Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../src/js/admin-sidebar.js"></script>
+    <!-- <script src="../src/js/check-admin-login.js"></script> -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+</body>
+
+</html>

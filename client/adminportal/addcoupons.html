@@ -13,7 +13,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../src/css/style3.css" />
-    <link rel="stylesheet" href="../src/css/coupons.css" />
+    <link rel="stylesheet" href="../src/css/adminportal.css" />
     <link rel="stylesheet" href="../src/css/commom.css" />
   </head>
   <body class="bg-light">
@@ -100,7 +100,16 @@
               </ul>
           </li>
           <li>
-              <a href="./iam.html">IAM</a>
+            <a href="./iam.html">IAM</a>
+          </li>
+          <li>
+            <a href="./vieworders.html">View Orders</a>
+          </li>
+          <li>
+            <a href="./addcoupons.html">Add Coupons</a>
+          </li>
+          <li>
+            <a href="./viewcoupons.html">View Coupons</a>
           </li>
           <li>
               <a class="logout-admin-btn" href="#">Logout</a>
@@ -116,58 +125,70 @@
       </div>
     </nav>
     <br /><br /><br /><br />
-    <div class="login-content">
-      <form id="login-form">
-        <h2 class="title">Add Coupons</h2>
-        <div class="input-div one">
-          <div class="i">
-            <!-- <i class="fa fa-user" style="color: gray"></i> -->
-          </div>
-          <div class="div">
-            <h5>Coupon Code</h5>
-            <input type="text" class="input" id="coupon_code" />
+    <form id="coupons">
+      <section id="coupons" class="sec">
+        <br /><br /><br />
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-md-8 col-lg-8 col-xl-8 card-container bg-dark"
+            >
+              <div class="row">
+                <div class="col text-center">
+                  <h1>ADD COUPONS</h1>
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control inp"
+                    placeholder="Coupon Code"
+                    id="coupon_code"
+                  />
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control inp"
+                    placeholder="Minimum Cart Amount"
+                    id="min_cart_amount"
+                  />
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control inp"
+                    placeholder="Type "
+                    id="type "
+                  />
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control inp"
+                    placeholder="Maximum Discount"
+                    id="max_discount"
+                  />
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col mt-4">
+                  <button type="button" class="btn btn-primary mt-4" style="width: 150px" id="add-product"> ADD COUPON </button>
+                </div>
+              </div>
+            </div>
+            <br /><br /><br />
           </div>
         </div>
-        <span class="error_form" id="coupon_code_error_message"></span>
-        <div class="input-div">
-          <div class="i">
-            <!-- <i class="fa fa-user" style="color: gray"></i> -->
-          </div>
-          <div class="div">
-            <h5>MInimum Cart Amount</h5>
-            <input type="text" class="input" id="min_cart_amt" />
-          </div>
-        </div>
-        <span class="error_form" id="min_cart_amt_error_message"></span>
-        <div class="input-div">
-          <div class="i">
-            <!-- <i class="fa fa-user" style="color: gray"></i> -->
-          </div>
-          <div class="div">
-            <h5>Type</h5>
-            <input type="text" class="input" id="type" />
-          </div>
-        </div>
-        <span class="error_form" id="type_error_message"></span>
-        <div class="input-div">
-          <div class="i">
-            <!-- <i class="fa fa-user" style="color: gray"></i> -->
-          </div>
-          <div class="div">
-            <h5>Maximum Discount</h5>
-            <input type="text" class="input" id="max_dist" />
-          </div>
-        </div>
-        <span class="error_form" id="max_dist_error_message"></span>
-        <br />
-        <input
-          type="button"
-          class="btn btn1"
-          value="ADD"
-          id="admin-login-btn"
-        />
-      </form>
-    </div>
+      </section>
+    </form>
     <br /><br /><br /><br />
     <!-- FOOTER START -->
     <div class="footer"></div>
