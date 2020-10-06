@@ -115,10 +115,21 @@
                     <a href="./vieworders.html">View Orders</a>
                 </li>
                 <li>
-                    <a href="./addcoupons.html">Add Coupons</a>
-                  </li>
-                  <li>
-                    <a href="./viewcoupons.html">View Coupons</a>
+                    <a href="#coupons" data-toggle="collapse" aria-expanded="false"
+                      >Coupons<i
+                        class="fa fa-caret-down"
+                        style="margin-left: 10px"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                    <ul class="collapse list-unstyled" id="coupons">
+                      <li>
+                        <a href="./addcoupons.html">Add Coupons</a>
+                      </li>
+                      <li>
+                        <a href="./viewcoupons.html">View Coupons</a>
+                      </li>
+                    </ul>
                   </li>
                 <li>
                     <a class="logout-admin-btn" href="#">Logout</a>
@@ -350,22 +361,31 @@
                     </tr>
                 </tbody>
             </table>
+            <br /><br /><br /><br />
+        <!-- FOOTER START -->
+        <div class="footer"></div>
+
+        <!-- END OF FOOTER -->
         </div>
+        
     </div>
 
     <div class="overlay"></div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="../src/js/admin-sidebar.js"></script>
-    <!-- <script src="../src/js/check-admin-login.js"></script> -->
+    <script src="../src/js/check-admin-login.js"></script>
+    <script src="../src/js/common.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        } );
-    </script>
+    <script src="../src/js/vieworders.js"></script>
 </body>
 
 </html>
