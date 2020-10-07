@@ -179,14 +179,42 @@
                   />
                 </div>
               </div>
+              <br>
+              <div class="col">
+                <select class="row custom-select selectcss" id="max_discount">
+                  <option selected>Select Discount Type</option>
+                  <option value="flat">Flat</option>
+                  <option value="percentage">Percentage</option>
+                </select>
+              </div>
               <div class="row align-items-center mt-4">
                 <div class="col">
                   <input
                     type="text"
                     class="form-control inp"
-                    placeholder="Maximum Discount"
-                    id="max_discount"
+                    placeholder="Amount"
+                    id="max_discount_amt"
                   />
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col">
+                  <input
+                    type="number"
+                    class="form-control inp"
+                    placeholder="Limit"
+                    id="limit"
+                  />
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col">
+                  <textarea
+                    type="number"
+                    class="form-control inp"
+                    placeholder="Description"
+                    id="des"
+                  ></textarea>
                 </div>
               </div>
               <div class="row align-items-center">

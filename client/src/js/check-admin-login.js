@@ -10,8 +10,8 @@ $.ajax({
   },
   error: function (xhr, status) {
     console.log("error", xhr, status);
-    window.location.href =
-      "https://testing1.thestrategybook.com/deepak-ecommerce/client/adminportal/login.html";
+    // window.location.href =
+    //   "https://testing1.thestrategybook.com/deepak-ecommerce/client/adminportal/login.html";
   },
 });
 
