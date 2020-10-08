@@ -13,6 +13,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="../src/css/style3.css" />
     <link rel="stylesheet" href="../src/css/commom.css" />
+    <link rel="stylesheet" href="../src/css/vieworders.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css"/>
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -161,6 +162,7 @@
                         <th>Price(after discount)</th>
                         <th>Order date</th>
                         <th>Status</th>
+                        <th class="updates1">Update Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -176,6 +178,11 @@
                         <td>Rs. 3,800</td>
                         <td>31/12.2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -189,6 +196,11 @@
                         <td>Rs. 1,200</td>
                         <td>30/12.2020</td>
                         <td>Delivered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -202,6 +214,11 @@
                         <td>Rs. 2,000</td>
                         <td>31/12/2020</td>
                         <td>Shipped</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -215,6 +232,11 @@
                         <td>Rs. 800</td>
                         <td>30/12/2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>5</td>
@@ -228,6 +250,11 @@
                         <td>Rs. 3,800</td>
                         <td>31/12/2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -241,6 +268,11 @@
                         <td>Rs. 3,800</td>
                         <td>31/12.2020</td>
                         <td>Delivered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -254,6 +286,11 @@
                         <td>Rs. 1,200</td>
                         <td>30/12.2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -267,6 +304,11 @@
                         <td>Rs. 2,000</td>
                         <td>31/12/2020</td>
                         <td>Delivered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>9</td>
@@ -280,6 +322,11 @@
                         <td>Rs. 800</td>
                         <td>30/12/2020</td>
                         <td>Shipped</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>10</td>
@@ -293,6 +340,11 @@
                         <td>Rs. 3,800</td>
                         <td>31/12/2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>11</td>
@@ -306,6 +358,11 @@
                         <td>Rs. 3,800</td>
                         <td>31/12.2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>12</td>
@@ -319,6 +376,11 @@
                         <td>Rs. 1,200</td>
                         <td>30/12.2020</td>
                         <td>Delivered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>13</td>
@@ -332,6 +394,11 @@
                         <td>Rs. 2,000</td>
                         <td>31/12/2020</td>
                         <td>Shipped</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>14</td>
@@ -345,6 +412,11 @@
                         <td>Rs. 800</td>
                         <td>30/12/2020</td>
                         <td>Ordered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>15</td>
@@ -358,6 +430,11 @@
                         <td>Rs. 3,800</td>
                         <td>31/12/2020</td>
                         <td>Delivered</td>
+                        <td>
+                            <button type="button" class="btn btn-primary updates" id="ordered">Ordered</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-secondary updates" id="shipped">Shipped</button>&nbsp;&nbsp;
+                            <button type="button" class="btn btn-success updates" id="delivered">Delivered</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
