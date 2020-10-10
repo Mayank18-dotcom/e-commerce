@@ -10,9 +10,18 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/css/style3.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>    <link rel="stylesheet" href="../src/css/style3.css" />
     <link rel="stylesheet" href="../src/css/adminportal.css" />
     <link rel="stylesheet" href="../src/css/commom.css" />
   </head>
@@ -30,7 +39,7 @@
 
       <ul class="list-unstyled components">
           <li>
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Product Upload<i class="fa fa-caret-down" style="margin-left: 10px" aria-hidden="true"></i></a>
               <ul class="collapse list-unstyled" id="homeSubmenu">
                   <li>
                       <a href="./dressMaterials/add.html">DRESS MATERIALS</a>
@@ -65,7 +74,7 @@
               </ul>
           </li>
           <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List<i class="fa fa-caret-down" style="margin-left: 10px;" aria-hidden="true"></i></a>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Product List<i class="fa fa-caret-down" style="margin-left: 10px" aria-hidden="true"></i></a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                   <li>
                       <a href="./dressMaterials/list.html">DRESS MATERIALS</a>
@@ -136,7 +145,7 @@
       </div>
     </nav>
     <br /><br /><br /><br />
-    <form id="coupons">
+    <form id="add_coupon_form">
       <section id="coupons" class="sec">
         <br /><br /><br />
         <div class="container">
@@ -156,6 +165,7 @@
                     class="form-control inp"
                     placeholder="Coupon Code"
                     id="coupon_code"
+		    name="coupon_code"
                   />
                 </div>
               </div>
@@ -165,7 +175,8 @@
                     type="text"
                     class="form-control inp"
                     placeholder="Minimum Cart Amount"
-                    id="min_cart_amount"
+                    id="min_amount_needed"
+                    name="min_amount_needed"
                   />
                 </div>
               </div>
@@ -209,7 +220,7 @@
               </div>
               <div class="row align-items-center">
                 <div class="col mt-4">
-                  <button type="button" class="btn btn-primary mt-4" style="width: 150px" id="add-product"> ADD COUPON </button>
+                  <button type="button" class="btn btn-primary mt-4" style="width: 150px" id="admin-add-coupon-btn">ADD COUPON </button>
                 </div>
               </div>
             </div>
@@ -235,6 +246,7 @@
     <script src="../src/js/form.js"></script>
     <script src="../src/js/common.js"></script>
     <script src="../src/js/admin-login.js"></script>
+    <script src="../src/js/admin-add-coupons.js"></script>
     <script src="../src/js/check-admin-login.js"></script>
   </body>
 </html>

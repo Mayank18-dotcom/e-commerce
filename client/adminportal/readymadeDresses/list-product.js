@@ -36,7 +36,7 @@ $(document).ready(function () {
         // delete api inside the success for previous api
         $(".delete-btn").click(function () {
           console.log("hi");
-          let productid = $(this).id;
+          let productid = $(this)[0].id;
           console.log(productid);
           $.ajax({
             url:

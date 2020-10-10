@@ -94,7 +94,7 @@
     </nav>
     <br /><br />
     <div class="login-content">
-      <form id="registration_form" action="" method="POST">
+      <form id="user-registration_form">
         <img src="../src/img/avatar.svg" />
         <h2 class="title">Register</h2>
         <div class="row">
@@ -104,41 +104,61 @@
                 <i class="fa fa-user" style="color: gray"></i>
               </div>
               <div class="div">
-                <h5>Username</h5>
-                <input type="text" class="input" id="name" />
+                <h5>Name</h5>
+                <input type="text" class="input" id="name" name="name" />
               </div>
             </div>
-            <span class="error_form" id="name_error_message"></span>
             <div class="input-div pass">
               <div class="i">
                 <i class="fa fa-lock" style="color: gray"></i>
               </div>
               <div class="div">
                 <h5>Password</h5>
-                <input type="password" class="input" id="password" />
+                <input
+                  type="password"
+                  class="input"
+                  id="password"
+                  name="password"
+                />
               </div>
             </div>
-            <span class="error_form" id="password_error_message"></span>
             <div class="input-div">
               <div class="i">
                 <i class="fa fa-map-marker" style="color: gray"></i>
               </div>
               <div class="div">
                 <h5>State</h5>
-                <input type="text" class="input" id="state" />
+                <input type="text" class="input" id="state" name="state" />
               </div>
             </div>
-            <span class="error_form" id="state_error_message"></span>
             <div class="input-div">
               <div class="i">
                 <i class="fa fa-map-marker" style="color: gray"></i>
               </div>
               <div class="div">
                 <h5>Location</h5>
-                <textarea type="text" class="input" id="address"></textarea>
+                <textarea
+                  type="text"
+                  class="input"
+                  id="address"
+                  name="address"
+                ></textarea>
               </div>
             </div>
-            <span class="error_form" id="address_error_message"></span>
+            <div class="input-div">
+              <div class="i">
+                <i class="fa fa-phone" style="color: gray"></i>
+              </div>
+              <div class="div">
+                <h5>Phone Number</h5>
+                <input
+                  type="text"
+                  class="input"
+                  id="phone_number"
+                  name="phone_number"
+                />
+              </div>
+            </div>
           </div>
           <div class="col">
             <div class="input-div">
@@ -147,57 +167,65 @@
               </div>
               <div class="div">
                 <h5>Email</h5>
-                <input type="email" class="input" id="email" />
+                <input type="email" class="input" id="email" name="email" />
               </div>
             </div>
-            <span class="error_form" id="email_error_message"></span>
-
             <div class="input-div pass">
               <div class="i">
                 <i class="fa fa-lock" style="color: gray"></i>
               </div>
               <div class="div">
                 <h5>Retype Password</h5>
-                <input type="password" class="input" id="confirm_password" />
+                <input
+                  type="password"
+                  class="input"
+                  id="confirm_password"
+                  name="confirm_password"
+                />
               </div>
             </div>
-            <span class="error_form" id="confirm_password_error_message"></span>
-
             <div class="input-div">
               <div class="i">
                 <i class="fa fa-map-marker" style="color: gray"></i>
               </div>
               <div class="div">
                 <h5>City</h5>
-                <input type="text" class="input" id="city" />
+                <input type="text" class="input" id="city" name="city" />
               </div>
             </div>
-            <span class="error_form" id="city_error_message"></span>
-
             <div class="input-div">
               <div class="i">
                 <i class="fa fa-map-marker" style="color: gray"></i>
               </div>
               <div class="div">
                 <h5>PIN</h5>
-                <input type="text" class="input" id="pincode" />
+                <input type="text" class="input" id="pincode" name="pincode" />
               </div>
             </div>
-            <span class="error_form" id="pincode_error_message"></span>
+            <div class="input-div">
+              <div class="i">
+                <i class="fa fa-phone" style="color: gray"></i>
+              </div>
+              <div class="div">
+                <h5>Alt Number</h5>
+                <input
+                  type="text"
+                  class="input"
+                  id="alt_number"
+                  name="alt_number"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div class="input-div">
-          <div class="i">
-            <i class="fa fa-phone" style="color: gray"></i>
-          </div>
-          <div class="div">
-            <h5>Phone Number</h5>
-            <input type="text" class="input" id="phone_number" />
-          </div>
-        </div>
-        <span class="error_form" id="phone_number_error_message"></span>
+
         <br />
-        <input type="submit" class="btn btn1" value="Signup" id="submit-btn" />
+        <input
+          type="submit"
+          class="btn btn1"
+          value="Signup"
+          id="user-register-btn"
+        />
       </form>
     </div>
     <br /><br />
